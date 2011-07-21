@@ -1,0 +1,390 @@
+/*========================================================
+    File:        mypage.css
+    Description: CSS Styles for plan page
+========================================================*/
+
+/* + Mypage CSS - Begin */
+#mypage .col-w
+{
+    width: 70.8%;
+}
+#mypage .col-n
+{
+    width: 28%;
+}
+
+#functionbox
+{
+    min-height: 102px;
+    _height: 102px;
+    padding: 15px 0 25px 25px;
+    background: url(../../_imgs/high/bg_fn.png) left bottom repeat-x;
+    overflow: hidden;
+    position: relative;
+}
+#form-function
+{
+    position: absolute;
+    top: 15px;
+    left: 100%;
+}
+#fnb-input
+{
+    border: 1px solid #cbcbcb;
+    border-bottom-color: #dbdbdb;
+    font-size: 170%;
+    padding: 0 5px;
+    width: 120px;
+    color: #f37916;
+    text-align: center;
+}
+
+    /* - Plan Hour Box */
+    .ph-one,
+    .ph-ten,
+    .ph-hdrd
+    {
+        display: inline-block;
+        padding-bottom: 2px;
+        border-bottom: 2px solid #f4f3f3;
+    }
+    a.ph-one,
+    a.ph-ten,
+    a.ph-hdrd
+    {
+        cursor: pointer;
+    }
+    a.ph-one:hover,
+    a.ph-one.active
+    {
+        border-bottom: 2px solid #fdc51a;
+    }
+    a.ph-ten:hover,
+    a.ph-ten.active
+    {
+        border-bottom: 2px solid #f3a216;
+    }
+    a.ph-hdrd:hover,
+    a.ph-hdrd.active
+    {
+        border-bottom: 2px solid #f37916;
+    }
+    .ph-txt
+    {
+        color: #fff;
+        font-size: 330%;
+        display: inline-block;
+        line-height: 1.2em;
+        
+        padding: 10px 8px 9px;
+        
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
+    .ph-one .ph-txt
+    {
+        background-color: #fdc51a;
+    }
+    .ph-ten .ph-txt
+    {
+        background-color: #f3a216;
+    }
+    .ph-hdrd .ph-txt
+    {
+        background-color: #f37916;
+    }
+    .ph-val,
+    .ph-unit
+    {
+        display: block;
+        text-align: center;
+        width: 100px;
+        line-height: 1.4em;
+    }
+    .ph-unit
+    {
+        text-align: right;
+        font-size: 43%;
+    }
+    
+
+/* + Right Side */
+#profilebox
+{
+    width: 92%;
+    margin: 0 0 0 5px;
+    padding: 0 5px 15px;
+    border-bottom: 1px dotted #16c4f3;
+}
+.pb-headshot
+{
+}
+.pb-hs-img
+{
+    border: 1px solid #cacaca;
+    display: block;
+    line-height: 0;
+}
+.pb-hs-edit
+{
+    bottom: 0;
+    right: 0;
+    background: #a6a7a7;
+    display: block;
+    padding: 2px 3px 1px;
+}
+.pb-name
+{
+    padding-right: 16px; 
+    background: url(../../_imgs/high/icon_male.png) right center no-repeat;
+}
+#addupbox
+{
+    background-color: #f4f3f3;
+    padding: 10px 0 10px 20px;
+    
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    
+}
+#activitystatusbox ul li
+{
+    clear: both;
+    margin: 10px 0 0 0;
+}
+.asb-icon
+{
+    width: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 150%;
+    line-height: 1.3em;
+    
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.asb-one .asb-icon,
+.asb-one .asb-bar-progress
+{
+    background-color: #fdc51a;
+}
+.asb-ten .asb-icon,
+.asb-ten .asb-bar-progress
+{
+    background-color: #f3a216;
+}
+.asb-hdrd .asb-icon,
+.asb-hdrd .asb-bar-progress
+{
+    background-color: #f37916;
+}
+
+.asb-bar
+{
+    width: 180px;
+    height: 5px;
+    background-color: #fff;
+    border: 1px solid #9c9c9c;
+    margin: 8px 0 0 13px;
+}
+.asb-bar-progress
+{
+    height: 5px;
+}
+.asb-one .asb-bar-progress
+{
+    width: 80%;
+}
+.asb-ten .asb-bar-progress
+{
+    width: 30%;
+}
+.asb-hdrd .asb-bar-progress
+{
+    width: 15%;
+}
+.asb-giveup
+{
+    display: none;
+    position: relative;
+    margin: 2px 0 0 5px;
+}
+.asb-giveup:hover
+{
+    text-decoration: none;
+}
+.asb-gu-prompt
+{
+    display: none;
+    position: absolute;
+    top: -1.5em;
+    left: -2em;
+    white-space: nowrap;
+    background-color: #ffde76;
+    padding: 2px 3px;
+    font-size: 88%;
+    color: #000;
+}
+
+/* + Feeds */
+.pg-title-feeds
+{
+    border-bottom: 1px solid #4acff3;
+}
+.pg-title-feeds h2
+{
+    padding-left: 33px;
+    min-height: 29px;
+    _height: 29px;
+    line-height: 29px;
+    background: url(../../_imgs/high/icon_chat.png) left center no-repeat;
+}
+#plantype
+{
+    right: 0;
+    bottom: -1px;
+}
+#plantype li
+{
+}
+#plantype li.active
+{
+    background-color: #fff;
+    border: 1px solid #4acff3;
+    border-bottom-width: 0;
+}
+#plantype li a
+{
+    color: #a6a7a7;
+    display: block;
+    line-height: 1.4em;
+    padding: 0 8px 0 7px;
+}
+#plantype li.active a
+{
+    color: #16c4f3;
+}
+#plantype li.pf-all a
+{
+    padding-left: 23px;
+    background: url(../../_imgs/high/icon_all.png) 10px center no-repeat;
+}
+#plantype li.pf-one a
+{
+    padding-left: 31px;
+    background: url(../../_imgs/high/icon_one.png) 10px center no-repeat;
+}
+#plantype li.pf-ten a
+{
+    padding-left: 31px;
+    background: url(../../_imgs/high/icon_ten.png) 10px center no-repeat;
+}
+#plantype li.pf-hdrd a
+{
+    padding-left: 31px;
+    background: url(../../_imgs/high/icon_hdrd.png) 10px center no-repeat;
+}
+
+.fb-list li
+{
+    border-left: 1px solid #16c4f3;
+    padding: 0 10px 0 9px;
+}
+.fb-list li.first
+{
+    border-left-width: 0;
+    padding-left: 0;
+}
+
+#fb-search
+{
+    line-height: 1.6em;
+    height: 1.6em;
+    border: 1px solid #cbcbcb;
+    padding-left: 20px;
+    background: url(../../_imgs/high/icon_search.png) 3px center no-repeat;
+    
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.btn-fb-clear
+{
+    top: 2px;
+    right: 2px;
+    width: 16px;
+    height: 17px;
+    background: url(../../_imgs/high/icon_clear.png) left center no-repeat;
+}
+
+
+.fb-record
+{
+    margin-top: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px dotted #16c4f3;
+}
+#feedsbox .last
+{
+    border-bottom-width: 0;
+}
+.fb-r-container
+{
+    margin-left: 6px;
+    width: 93%;
+    border-left: 1px solid #dadada;
+    padding-left: 6px;
+}
+.fb-r-content
+{
+    background-color: #f4f3f3;
+    padding: 6px 8px 10px 8px;
+}
+.fb-r-state
+{
+    color: #a8a8a8;
+}
+.fb-r-date
+{
+    color: #8b8b8b;
+}
+.fb-r-me,
+.fb-r-plan,
+.fb-r-title
+{
+    color: #f37916;
+}
+.fb-r-text
+{
+    line-height: 1.3em;
+}
+.fb-r-action li
+{
+    border-left: 1px solid #8b8b8b;
+    padding: 0 9px 0 10px;
+}
+.fb-r-action li.first
+{
+    border-left-width: 0;
+    padding-left: 0;
+}
+.fb-r-action li a
+{
+    color: #8b8b8b;
+}
+
+
+#activitystatisticbox li
+{
+    padding: 0 9px 0 10px;
+    border-left: 1px solid #c9c9c9;
+}
+#activitystatisticbox li.first
+{
+    padding-left: 0;
+    border-left-width: 0;
+}
+/* + Mypage CSS - End */
