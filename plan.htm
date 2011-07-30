@@ -3,84 +3,72 @@
 <head>
 	<meta charset="utf-8">
 	<title>啄米</title>
+
+	<meta content="啄米网" name="keywords" />
+    <meta content="啄米网" name="description" />
+
+    <link type="image/x-icon" rel="Shortcut Icon" href="favicon.ico" />
+    <link type="image/x-icon" rel="Bookmark" href="favicon.ico" />
+    
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+    <!-- Style Sheet -->
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/base.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/common.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/frame.css" />
+
 </head>
 <body>
-    <section>
-    	<h2>你好，请从这里登录</h2>
-    	<a>忘记密码</a>
-    	<form id="login">
-    		<label>用户名</label>
-    		<input id="username">
-    		<label>密码</label>
-    		<input id="password">
-    	</form>
-    	<a>关闭登录</a>
-    </section>
-	<header>
-	    <h1>啄米网
-	        <span>死磕是一种精神</span>
-	    </h1>
-	</header>
-	<!--nav></nav-->
-	<div>
-        <div>
-		    <h1>制定一个计划：</h1>
-		    <a>随便看看</a>
+    <div id="topbar" class="hidden">
+        <div class="pw align-c">
+    	    <h2>你好，请从这里登录</h2>
+    	    <a>忘记密码</a>
+    	    <form id="login">
+    		    <label>用户名</label>
+    		    <input id="username">
+    		    <label>密码</label>
+    		    <input id="password">
+    	    </form>
+    	    <a>关闭登录</a>
         </div>
-		<section>
-			<div>
-				<a><img src="" alt="" /></a>
-				<p>小舒一路狂奔</p>
-				<div>
-					<p>0 hrs</p>
-					<div>1</div>
-				</div>
-			</div>
-            <strong>跑步</strong>
-            <p>死磕是一种精神，坚持就是胜利</p>
-            <hr />
-            <p>看看目前最多人想做的计划是什么：</p>
-            <ul>
-                <li>
-                    <a>跑步</a>
-                </li>
-                <li>
-                    <a>减肥</a>
-                </li>
-                <li>
-                    <a>旅行</a>
-                </li>
-                <li>
-                    <a>学习</a>
-                </li>
-                <li>
-                    <a>运动</a>
-                </li>
-                <li>
-                    <a>输入自定义</a>
-                </li>
-            </ul>
-            <p>
-                <em>选择要执行的计划后，请在下列选择计划时间长度：</em>
-            </p>
-            <div id="planhour" class="mt-25">
-                <a href="#this" class="ph-one">
-                    <span class="ph-txt"><span class="ph-val">1</span><span class="ph-unit">小时</span></span>
-                </a>
-                <a href="#this" class="ph-ten">
-                    <span class="ph-txt"><span class="ph-val">10</span><span class="ph-unit">小时</span></span>
-                </a>
-                <a href="#this" class="ph-hdrd">
-                    <span class="ph-txt"><span class="ph-val">100</span><span class="ph-unit">小时</span></span>
-                </a>
-            </div>
-		</section>
+    </div>
+    <div id="header">
+		<div class="pw align-c cf">
+	    	<h1 id="logo" class="col-l">
+                <img src="_imgs/high/logo.png" alt="啄米网" title="死磕是一种精神" />
+	        	<p class="txt-m">死磕是一种精神</p>
+	    	</h1>
+		</div>
 	</div>
-	<footer>
-        <p>&copy; 2011 啄米网 沪ICP备 198003220 号</p>
-        <p>
-            <strong>关注啄米网</strong>
-        </p>
-    </footer>
+	<!--nav></nav-->
+    <div id="main">
+        <div id="titlebar">
+            <div class="pw align-c cf">
+		        <h2 class="italic col-l ml-50 txt-6xl">制定一个计划：</h2>
+                <a class="col-r">随便看看</a>
+            </div>
+        </div>
+	    <div id="content">
+		    <div id="container" class="pw align-c">
+			    <div>
+				    <a><img src="" alt="" /></a>
+				    <p>小舒一路狂奔</p>
+				    <div>
+					    <p>0 hrs</p>
+					    <div>1</div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+	<div id="footer">
+		<div class="pw align-c cf">
+            <div class="footer-siteinfo col-l">&copy; 2011 啄米网 沪ICP备198003220号</div>
+            <div class="col-r">
+                <span class="footer-advice">梦想这东西和经典一样，永远不会因为时间而褪色，反而更显珍贵</span>
+                <a class="footer-weibo ml-5 hand">关注啄米网：</a>
+            </div>
+        </div>
+	</div>
 </body>
 </html>

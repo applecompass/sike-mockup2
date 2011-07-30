@@ -1,0 +1,134 @@
+<!Doctype HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>啄米</title>
+
+	<meta content="啄米网" name="keywords" />
+    <meta content="啄米网" name="description" />
+
+    <link type="image/x-icon" rel="Shortcut Icon" href="favicon.ico" />
+    <link type="image/x-icon" rel="Bookmark" href="favicon.ico" />
+    
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+    <!-- Style Sheet -->
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/base.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/common.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/frame.css" />
+
+</head>
+<body>
+    <div id="header">
+        <div id="topbar" class="pw align-c pos-rel">
+            <div id="topbar-login">
+                <div class="cf">
+    	            <h2 class="whi txt-3xl col-l">你好，请从这里登录！</h2>
+    	            <a class="tb-login-forgetpass pur ml-10 hand">忘记密码</a>
+                </div>
+    	        <form id="loginform" class="clear mt-10 ml-45">
+    		        <label for="loginform-username" class="pur">用户名：</label>
+    		        <input type="text" id="loginform-username" class="fb-input outerglow">
+    		        <label for="loginform-password" class="pur ml-5">密码：</label>
+    		        <input type="text" id="loginform-password" class="fb-input outerglow">
+                    <input type="button" value="登录" class="loginform-submit whi ml-15 hand" />
+    	        </form>
+            </div>
+            <ul id="topbar-menu" class="pos-abs hor whi">
+                <li>
+                    <a class="hand">用户注册</a>
+                </li>
+                <li>
+                    <a class="active hand">登录</a>
+                </li>
+            </ul>
+    	    <a id="topbar-btn-close" class="hand pos-abs pur">关闭登录</a>
+        </div>
+		<div id="head" class="pw align-c cf">
+	    	<h1 id="logo" class="col-l">
+                <img src="_imgs/high/logo.png" alt="啄米网" title="死磕是一种精神" />
+	        	<p class="txt-m">死磕是一种精神</p>
+	    	</h1>
+		</div>
+	</div>
+	<!--nav></nav-->
+    <div id="main">
+        <div id="titlebar">
+            <div class="pw align-c cf">
+		        <h2 class="italic col-l ml-60 txt-6xl">欢迎来到啄米：</h2>
+                <a class="titlebar-link ora col-r hand mr-10">已经是啄米注册用户？点击上方登录</a>
+            </div>
+        </div>
+	    <div id="content" class="pw align-c">
+		    <div id="container">
+			    <h2 class="ora italic txt-4xl">激活个人账号</h2>
+                <form action="" id="form-createuser">
+                    <fieldset class="formbox">
+                        <legend class="fb-title hidden">激活个人账号</legend>
+                        <div>
+                            <p class="bla mt-20">
+                                <label for="fb-mail">电子邮件：</label>
+                            </p>
+                            <p class="mt-5 pos-rel">
+                                <input type="text" id="fb-mail" class="fb-input outerglow" autofocus />
+                                <span class="pos-abs fb-tip whi hidden">
+                                    <sup class="pos-abs icon-formerr"></sup>
+                                    <span class="fb-tip-msg"></span>
+                                </span>
+                            </p>
+                            <p class="gry mt-5">用来登录啄米，请牢记此Email</p>
+                        </div>
+                        <div>
+                            <p class="bla mt-20">
+                                <label for="fb-nickname">起个拉风的用户名：</label>
+                            </p>
+                            <p class="mt-5 pos-rel">
+                                <input type="text" id="fb-username" class="fb-input outerglow" />
+                                <span class="pos-abs fb-tip whi hidden">
+                                    <sup class="pos-abs icon-formerr"></sup>
+                                    <span class="fb-tip-msg"></span>
+                                </span>
+                            </p>
+                            <p class="gry mt-5">使用你在网上常用昵称，小于12个字符</p>
+                        </div>
+                        <div>
+                            <p class="bla mt-20">
+                                <label for="fb-password">设置密码：</label>
+                            </p>
+                            <p class="mt-5 pos-rel">
+                                <input type="password" id="fb-password" class="fb-input outerglow" />
+                                <span class="pos-abs fb-tip whi hidden">
+                                    <sup class="pos-abs icon-formerr"></sup>
+                                    <span class="fb-tip-msg"></span>
+                                </span>
+                            </p>
+                            <p class="gry mt-5"">6-16个字符</p>
+                        </div>
+                        <p class="mt-15">
+                            <input type="checkbox" id="fb-chk-protocal" class="fb-chkbox" />
+                            <label for="fb-chk-protocal">我已同意并接受《<a href="plan.htm" class="ora">使用协议</a>》</label>
+                        </p>
+                        <p class="mt-18">
+                            <a id="fb-createuser" href="plan.htm" class="btn-yes btn-disable">
+                                欢迎加入啄米
+                            </a>
+                            <span class="hidden">
+                                <input type="submit" id="fb-createuser" class="btn-yes outerglow" value="创建用户" />
+                            </span>
+                        </p>
+                    </fieldset>
+                </form>
+		    </div>
+	    </div>
+    </div>
+	<div id="footer">
+		<div class="pw align-c cf">
+            <div class="footer-siteinfo col-l ml-10">&copy; 2011 啄米网 沪ICP备198003220号</div>
+            <div class="col-r mr-3">
+                <span class="footer-advice">梦想这东西和经典一样，永远不会因为时间而褪色，反而更显珍贵</span>
+                <a class="footer-weibo ml-5 hand">关注啄米网：</a>
+            </div>
+        </div>
+	</div>
+</body>
+</html>

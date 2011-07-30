@@ -8,94 +8,145 @@
 /* Page Width */
 .pw
 {
-    width: 80em;
+    width: 81.32em; /* 976px */
     /*width: 80%;*/
 }
-
+    
     /* + Header */
     #header
     {
-        background-color: #00aff0;
+        background-color: #61468b;
     }
-    #head
-    {
-        padding: 13px 27px;
-        background: url(../_imgs/high/logo_bg.png) left bottom no-repeat;
-    }
+        /* - Top Bar */
+        #topbar
+        {
+            background-color: #b49adc;
+        }
+            #topbar-btn-close
+            {
+                right: 8px;
+                top: 8px;
+                line-height: 17px;
+                padding-right: 23px;
+                background: url(../_imgs/high/topbar.png) right -160px no-repeat;
+            }
+            #topbar-menu
+            {
+                right: 0;
+                bottom: -20px;
+            }
+                #topbar-menu li
+                {
+                    background-color: #b49adc;
+                    margin-left: 3px;
+                }
+                #topbar-menu .active
+                {
+                    color: #61468b;
+                }
+            /* - Login */
+            #topbar-login
+            {
+                padding: 15px;
+            }
+                #topbar-login h2
+                {
+                    padding-left: 45px;
+                    background: url(../_imgs/high/topbar.png) 0 -200px no-repeat;
+                }
+                #topbar-login h2,
+                .tb-login-forgetpass
+                {
+                    line-height: 38px;
+                }
+                /* - Login Form */
+                #loginform .fb-input
+                {
+                    min-width: 160px;
+                    _width: 160px;
+                }
+                .loginform-submit
+                {
+                    background-color: #61468b;
+                    border-width: 0;
+                    padding: 1px 10px;
+                    
+                    -moz-border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    border-radius: 3px;
+                }
+        
         /* - Logo */
-        #logo,
-        #logo img 
+        #logo
+        {
+            padding: 5px;
+        }
+        #logo p 
         {
             color: #fff;
-            width: 51px;
-            height: 27px;
-            display: block;
         }
+
+    /* + Main */
+    #main
+    {
+        background-color: #eff3f2;
+        border-top: 1px solid #fff;
+    }
+        /* - Title */
+        #titlebar
+        {
+            background-color: #dee0df;
+            padding: 13px 0 30px;
+        }
+            #titlebar h2
+            {
+                color: #5c5c5c;
+            }
+            .titlebar-link
+            {
+                line-height: 26px;
+            }
+        /* - Content */
+        #content
+        {
+            margin-top: -17px;
+            padding-bottom: 78px;
+        }
+            #container
+            {
+                background-color: #fff;
+                padding: 15px 35px;
+        
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+                #container h2
+                {
+                    padding-bottom: 10px;
+                    border-bottom: 1px dotted #b9b9b9;
+                }
     
-    /* + Shoulder */
-    .shoulder
-    {
-        height: 9px;
-        background-color: #eff1f2;
-        border-top: 3px solid #fff;
-        border-bottom: 1px solid #cbcbcb;
-    }
-
-    /* Wrapper */
-    #wrapper
-    {
-        padding-bottom: 50px;
-    }
-    #banner
-    {
-        min-height: 150px;
-    }
-
     /* + Footer */
     #footer
     {
-        color: #aeaeae;
-        margin-top: 10px;
-        padding: 6px 0 10px;
-        border-top: 1px dotted #16c4f3;
-    }
-    #footer p
-    {
+        background-color: #fff;
+        border-top: 1px solid #dee0df;
+        padding: 8px 0;
         line-height: 16px;
     }
-    .au-links
-    {
-        width: 1px;
-        height: 1.4em;
-        overflow: hidden;
-    }
-    .au-links li
-    {
-        margin-left: 10px;
-    }
-    .au-links li a
-    {
-        line-height: 1.4em;
-        color: #aeaeae;
-    }
-    .au-links li a:hover
-    {
-        text-decoration: underline;
-    }
-    #au-prev,
-    #au-next
-    {
-        width: 5px;
-        height: 16px;
-        float: left;
-    }
-    #au-prev
-    {
-        background: url(../_imgs/high/icon_prev.png) right center no-repeat;
-    }
-    #au-next
-    {
-        margin-left: 2px;
-        background: url(../_imgs/high/icon_next.png) left center no-repeat;
-    }
+        .footer-siteinfo,
+        .footer-weibo
+        {
+            color: #646464;
+        }
+        .footer-advice
+        {
+            color: #aeaeae;
+        }
+        .footer-weibo
+        {
+            padding-right: 20px;
+            background: url(../_imgs/high/bkmk_sina.png) right center no-repeat;
+        }
 /* + Frame CSS - End */

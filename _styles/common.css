@@ -8,9 +8,9 @@
 /* + Tab Selector */
 body
 {
-    font: 400 12px/1.2em 'Î¢ÈíÑÅºÚ','Microsoft Yahei',Arial;
+    font: 400 12px/1.2em Tahoma, Helvetica, Arial, sans-serif;
 }
-p, span, strong, h1, h2, h3
+a, p, span, strong, em, h1, h2, h3, h4, h5, h6
 {
     line-height: 1.2em;
 }
@@ -24,33 +24,25 @@ a:hover
 }
 /* + Common classes */
     /* - Over write base CSS */
-    .gry,
-    .gry a,
-    .gry a:hover,
-    a.gry:hover         {   color: #b5b5b5;    }
-    .azure,
-    .azure a,
-    .azure a:hover,
-    a.azure:hover       {   color: #16c4f3;    }
-    
+    .ora,
+    .ora a,
+    .ora a:hover,
+    a.ora:hover         {   color: #ef7526;    }
+    .pur,
+    .pur a,
+    .pur a:hover,
+    a.pur:hover         {   color: #61468b;    }
+
     /* - Form */
     .formbox
     {
     }
     .fb-title
     {
-        display: block;
-        width: 100%;
-        padding: 0 0 5px;
-        border-bottom: 3px double #16c4f3;
-    }
-    .fb-firstel
-    {
-        display: inline-block;
     }
     .fb-input
     {
-        border: 1px solid #16c4f3;
+        border: 1px solid #c3c3c3;
         line-height: 1.7em;
         height: 1.7em;
         min-width: 210px;
@@ -85,9 +77,9 @@ a:hover
     .outerglow:hover,
     .outerglow:focus
     {
-        -moz-box-shadow: 0 0 5px #3cf;
-        -webkit-box-shadow: 0 0 5px #3cf;
-        box-shadow: 0 0 5px #3cf;
+        -moz-box-shadow: 0 0 5px #ccf;
+        -webkit-box-shadow: 0 0 5px #ccf;
+        box-shadow: 0 0 5px #ccf;
     }
     
     /* - Buttons */
