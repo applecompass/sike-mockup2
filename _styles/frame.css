@@ -26,23 +26,36 @@
             {
                 right: 8px;
                 top: 8px;
-                line-height: 17px;
+                line-height: 19px;
                 padding-right: 23px;
-                background: url(../_imgs/high/topbar.png) right -160px no-repeat;
+                background: url(../_imgs/high/icon_top_close.png) right top no-repeat;
             }
+            /* - Menu */
             #topbar-menu
             {
                 right: 0;
-                bottom: -20px;
+                bottom: -21px;
             }
                 #topbar-menu li
                 {
                     background-color: #b49adc;
                     margin-left: 3px;
+                    border-top: 1px solid #61468b;
+                    
+                    -moz-border-radius: 0 0 6px 6px;
+                    -webkit-border-radius: 0 0 6px 6px;
+                    border-radius: 0 0 6px 6px;
                 }
                 #topbar-menu .active
                 {
                     color: #61468b;
+                    border-top: 1px solid #b49adc;
+                }
+                #topbar-menu li a
+                {
+                    line-height: 20px;
+                    display: block;
+                    padding: 0 15px;
                 }
             /* - Login */
             #topbar-login
@@ -52,7 +65,7 @@
                 #topbar-login h2
                 {
                     padding-left: 45px;
-                    background: url(../_imgs/high/topbar.png) 0 -200px no-repeat;
+                    background: url(../_imgs/high/icon_login.png) left top no-repeat;
                 }
                 #topbar-login h2,
                 .tb-login-forgetpass
@@ -79,7 +92,7 @@
         /* - Logo */
         #logo
         {
-            padding: 5px;
+            padding: 6px 0 4px 5px;
         }
         #logo p 
         {
@@ -95,6 +108,8 @@
         /* - Title */
         #titlebar
         {
+            min-height: 26px;
+            _height: 26px;
             background-color: #dee0df;
             padding: 13px 0 30px;
         }
@@ -121,10 +136,16 @@
                 -webkit-border-radius: 10px;
                 border-radius: 10px;
             }
-                #container h2
+                #container h2,
+                .container-sep-b
                 {
                     padding-bottom: 10px;
                     border-bottom: 1px dotted #b9b9b9;
+                }
+                .container-sep-t
+                {
+                    padding-top: 10px;
+                    border-top: 1px dotted #b9b9b9;
                 }
     
     /* + Footer */
@@ -146,7 +167,11 @@
         }
         .footer-weibo
         {
-            padding-right: 20px;
-            background: url(../_imgs/high/bkmk_sina.png) right center no-repeat;
+            padding: 2px 20px 0 0;
+            background: url(../_imgs/high/bkmk_sina_dis.png) right top no-repeat;
+        }
+        .footer-weibo:hover
+        {
+            background-image: url(../_imgs/high/bkmk_sina.png);
         }
 /* + Frame CSS - End */

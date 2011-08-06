@@ -6,34 +6,52 @@
 
 	<meta content="啄米网" name="keywords" />
     <meta content="啄米网" name="description" />
+    <meta content="啄米网" name="Author">
 
     <link type="image/x-icon" rel="Shortcut Icon" href="favicon.ico" />
     <link type="image/x-icon" rel="Bookmark" href="favicon.ico" />
-    
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+    <meta name="viewport" content="width=1024; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 
     <!-- Style Sheet -->
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/base.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/common.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/frame.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/page/plan.css" />
 
 </head>
 <body>
-    <div id="topbar" class="hidden">
-        <div class="pw align-c">
-    	    <h2>你好，请从这里登录</h2>
-    	    <a>忘记密码</a>
-    	    <form id="login">
-    		    <label>用户名</label>
-    		    <input id="username">
-    		    <label>密码</label>
-    		    <input id="password">
-    	    </form>
-    	    <a>关闭登录</a>
-        </div>
-    </div>
     <div id="header">
-		<div class="pw align-c cf">
+        <div id="topbar" class="pw align-c pos-rel">
+            <div id="topbar-login" class="topbar-content hidden">
+                <div class="cf">
+    	            <h2 class="whi txt-3xl col-l">你好，请从这里登录！</h2>
+    	            <a class="tb-login-forgetpass pur ml-10 hand">忘记密码</a>
+                </div>
+    	        <form id="loginform" class="clear mt-10 ml-45">
+    		        <label for="loginform-username" class="pur">用户名：</label>
+    		        <input type="text" id="loginform-username" class="fb-input outerglow">
+    		        <label for="loginform-password" class="pur ml-5">密码：</label>
+    		        <input type="text" id="loginform-password" class="fb-input outerglow">
+                    <input type="button" value="登录" class="loginform-submit whi ml-15 hand" />
+    	        </form>
+            </div>
+            <div id="topbar-regist" class="topbar-content hidden">
+                <br />
+                <br />
+                <br />
+            </div>
+            <ul id="topbar-menu" class="pos-abs hor whi">
+                <li>
+                    <a href="#topbar-regist" class="hand">用户注册</a>
+                </li>
+                <li>
+                    <a href="#topbar-login" class="hand">登录</a>
+                </li>
+            </ul>
+    	    <a id="topbar-btn-close" class="hand pos-abs pur hidden">关闭登录</a>
+        </div>
+		<div id="head" class="pw align-c cf">
 	    	<h1 id="logo" class="col-l">
                 <img src="_imgs/high/logo.png" alt="啄米网" title="死磕是一种精神" />
 	        	<p class="txt-m">死磕是一种精神</p>
@@ -44,31 +62,122 @@
     <div id="main">
         <div id="titlebar">
             <div class="pw align-c cf">
-		        <h2 class="italic col-l ml-50 txt-6xl">制定一个计划：</h2>
-                <a class="col-r">随便看看</a>
+		        <h2 class="italic col-l ml-60 txt-6xl">制定一个计划：</h2>
+                <a class="btn-ora-next-r whi col-r hand mr-10">
+                    <span>随便看看</span>
+                </a>
             </div>
         </div>
-	    <div id="content">
-		    <div id="container" class="pw align-c">
-			    <div>
-				    <a><img src="" alt="" /></a>
-				    <p>小舒一路狂奔</p>
-				    <div>
-					    <p>0 hrs</p>
-					    <div>1</div>
-				    </div>
-			    </div>
+	    <div id="content" class="pw align-c">
+		    <div id="container" class="pos-rel">
+			    <div class="cf mt-8">
+                    <div class="col-l col-n">
+                        <div id="pointsbox" class="cf">
+                            <a class="pointsbox-headshot col-l hand">
+                                <img src="_imgs/photos/l.jpg" />
+                            </a>
+                            <div class="col-l ml-13">
+                                <p class="pointsbox-name ml-3 mt-3 bla">小舒一路狂奔</p>
+                                <div class="pointsbox-bar mt-8">
+                                    <div class="pointsbox-progress col-l whi">O<span class="ml-5 txt-s">hrs</span></div>
+                                    <div class="pointsbox-num col-r bla">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="txtalign-c clear mt-40">
+                            <strong id="plan-name" class="bla">跑步</strong>
+                            <p class="gra txt-xl mt-20">死磕是一种精神，坚持就是胜利</p>
+                        </div>
+                    </div>
+                    <div class="col-l col-w">
+                    
+                    </div>
+                </div>
+                <div id="planlistbox" class="container-sep-t mt-15">
+                    <p class="gra txt-xl txtalign-c mt-5">看看目前最多的人想做的计划是什么：</p>
+                    <ul id="planlist" class="hor">
+                        <li class="first planlist-run">
+                            <a class="hand txtalign-c">
+                                <img src="_imgs/icons/run.png" />
+                                <span class="mgry txt-xl">跑步</span>
+                            </a>
+                        </li>
+                        <li class="planlist-loseweight">
+                            <a class="hand txtalign-c">
+                                <img src="_imgs/icons/loseweight.png" />
+                                <span class="mgry txt-xl">减肥</span>
+                            </a>
+                        </li>
+                        <li class="planlist-travel">
+                            <a class="hand txtalign-c">
+                                <img src="_imgs/icons/travel.png" />
+                                <span class="mgry txt-xl">旅行</span>
+                            </a>
+                        </li>
+                        <li class="planlist-study">
+                            <a class="hand txtalign-c">
+                                <img src="_imgs/icons/study.png" />
+                                <span class="mgry txt-xl">学习</span>
+                            </a>
+                        </li>
+                        <li class="planlist-sports">
+                            <a class="hand txtalign-c">
+                                <img src="_imgs/icons/sports.png" />
+                                <span class="mgry txt-xl">运动</span>
+                            </a>
+                        </li>
+                        <li class="planlist-customize">
+                            <a class="hand txtalign-c">
+                                <img src="_imgs/icons/customize.png" />
+                                <span class="mgry txt-xl">输入自定义</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="remind italic mt-15">选择要执行的计划后，请在下列选择计划时间长度：</p>
+                <p class="planlistbox-btn-more-container pos-abs txtalign-c">
+                    <a id="planlistbox-btn-more" class="hand shrink txt-xl bla inlineblock">收起其它活动</a>
+                </p>
 		    </div>
+            <div class="txtalign-c mt-50">
+                <ul id="planhour" class="inlineblock hor">
+                    <li>
+                        <a href="#this" class="ph-one">
+                            <span class="ph-val">1</span>
+                            <span class="ph-unit">小时</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#this" class="ph-ten">
+                            <span class="ph-val">10</span>
+                            <span class="ph-unit">小时</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#this" class="ph-hdrd">
+                            <span class="ph-val">100</span>
+                            <span class="ph-unit">小时</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
 	    </div>
     </div>
 	<div id="footer">
 		<div class="pw align-c cf">
-            <div class="footer-siteinfo col-l">&copy; 2011 啄米网 沪ICP备198003220号</div>
-            <div class="col-r">
+            <div class="footer-siteinfo col-l ml-10">&copy;&nbsp;2011&nbsp;啄米网&nbsp;沪ICP备198003220号</div>
+            <div class="col-r mr-3">
                 <span class="footer-advice">梦想这东西和经典一样，永远不会因为时间而褪色，反而更显珍贵</span>
                 <a class="footer-weibo ml-5 hand">关注啄米网：</a>
             </div>
         </div>
 	</div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="_scripts/lib/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="_scripts/ui/topbar.js"></script>
+
 </body>
 </html>

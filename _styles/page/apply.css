@@ -1,0 +1,121 @@
+/*========================================================
+    File:        apply.css
+    Description: CSS Styles for apply page
+========================================================*/
+
+/* + Apply CSS - Begin */
+html
+{
+    background-color: #eff3f2;
+}
+
+.applybox
+{
+    width: 60%;
+    background: url(../../_imgs/high/login_reflection.png) center 90px no-repeat;
+}
+.welcometip
+{
+    top: -55px;
+    display: inline-block;
+    padding: 20px 30px 15px;
+    border: 1px solid #9979cb;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #af94db;
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #af94db, #f7f1ff); 
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f7f1ff), to(#af94db)); 
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#f7f1ff, #af94db); 
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(#f7f1ff, #af94db);
+}
+#container .welcometip h2
+{
+    font-size: 48px;
+    letter-spacing: 5px;
+    border-bottom-width: 0;
+}
+.welcometip h2 strong
+{
+    font-weight: 400;
+}
+.welcometip-prong
+{
+    width: 24px;
+    height: 22px;
+    bottom: -21px;
+    left: 47%;
+    background: url(../../_imgs/high/icon_prong.png) left top no-repeat;
+}
+/* + Apply Form */
+.applyformbox
+{
+    width: 80%;
+    border: 1px solid #878787;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #fff;
+    -moz-box-shadow: 3px 3px 3px #d3d3d3 inset;
+    -webkit-box-shadow: 3px 3px 3px #d3d3d3 inset;
+    box-shadow: 3px 3px 3px #d3d3d3 inset;
+}
+#applyform-email-hint,
+#applyform-email
+{
+    height: 36px;
+    line-height: 36px;
+}
+#applyform-email-hint
+{
+    left: 15px;
+    cursor: text;
+}
+#applyform-email
+{
+    float: left;
+    border-width: 0;
+    background: transparent;
+    padding-left: 15px;
+}
+.applyform-button
+{
+    margin: 2px;
+    padding: 0 10px 0 0;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #61468b;
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #61468b, #b094da); 
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b094da), to(#61468b)); 
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#b094da, #61468b); 
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(#b094da, #61468b);
+}
+#applyform-submit
+{
+    height: 32px;
+    line-height: 32px;
+    border-width: 0;
+    padding: 0 15px 0 10px;
+    background: url(../../_imgs/high/icon_arrow_r.png) right center no-repeat;
+}
+
+/* + footer */
+#footer
+{
+    border-top-width: 0;
+    margin-top: 60px;
+}
+
+
+/* + Apply CSS - End */

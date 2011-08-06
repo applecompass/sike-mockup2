@@ -37,6 +37,10 @@ a:hover
     .formbox
     {
     }
+    .formbox .gra
+    {
+        color: #a3a3a3;
+    }
     .fb-title
     {
     }
@@ -119,6 +123,20 @@ a:hover
         opacity: 0.6;
         filter: alpha(opacity=60);
         cursor: default;
+    }
+    .btn-weibo
+    {
+        padding-left: 29px;
+        background: url(../_imgs/high/btn_weibo_l.png) left top no-repeat;
+    }
+    .btn-weibo .fw-l
+    {
+        height: 21px;
+        line-height: 20px;
+        color: #fff;
+        padding: 0 15px 0 12px;
+        background: url(../_imgs/high/btn_weibo_r.png) right top no-repeat;
+        text-shadow: 0 1px 2px #333;
     }
     
     /* - Icons */

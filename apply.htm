@@ -1,0 +1,93 @@
+<!Doctype HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>啄米</title>
+
+	<meta content="啄米网" name="keywords" />
+    <meta content="啄米网" name="description" />
+    <meta content="啄米网" name="Author">
+
+    <link type="image/x-icon" rel="Shortcut Icon" href="favicon.ico" />
+    <link type="image/x-icon" rel="Bookmark" href="favicon.ico" />
+
+    <meta name="viewport" content="width=1024; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+    <!-- Style Sheet -->
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/base.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/common.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/frame.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/page/apply.css" />
+
+</head>
+<body>
+    <div id="header">
+        <div id="topbar" class="pw align-c pos-rel">
+            <div id="topbar-login" class="topbar-content hidden">
+                <div class="cf">
+    	            <h2 class="whi txt-3xl col-l">你好，请从这里登录！</h2>
+    	            <a class="tb-login-forgetpass pur ml-10 hand">忘记密码</a>
+                </div>
+    	        <form id="loginform" class="clear mt-10 ml-45">
+    		        <label for="loginform-username" class="pur">用户名：</label>
+    		        <input type="text" id="loginform-username" class="fb-input outerglow">
+    		        <label for="loginform-password" class="pur ml-5">密码：</label>
+    		        <input type="text" id="loginform-password" class="fb-input outerglow">
+                    <input type="button" value="登录" class="loginform-submit whi ml-15 hand" />
+    	        </form>
+            </div>
+            <ul id="topbar-menu" class="pos-abs hor whi">
+                <li>
+                    <a href="#topbar-login" class="hand">登录</a>
+                </li>
+            </ul>
+    	    <a id="topbar-btn-close" class="hand pos-abs pur hidden">关闭登录</a>
+        </div>
+		<div id="head" class="pw align-c cf">
+	    	<h1 id="logo" class="col-l">
+                <img src="_imgs/high/logo.png" alt="啄米网" title="死磕是一种精神" />
+	        	<p class="txt-m">死磕是一种精神</p>
+	    	</h1>
+		</div>
+	</div>
+	<!--nav></nav-->
+    <div id="main">
+        <div id="titlebar">
+            <div class="pw align-c cf">
+            </div>
+        </div>
+	    <div id="content" class="pw align-c">
+		    <div id="container" class="txtalign-c">
+                <div class="applybox align-c">
+                    <div class="welcometip pos-rel">
+			            <h2 class="whi">欢迎来<strong class="pur ml-15">啄米</strong></h2>
+                        <p class="italic whi txt-xl">我们就快发布了！</p>
+                        <span class="welcometip-prong pos-abs"></span>
+                    </div>
+                    <p class="pur txt-3xl mt-45">欢迎来到啄米网，将你的计划记录下来与以后的你和你的朋友分享</p>
+                    <p class="italic gra mt-10 txtalign-l ml-40 mr-40">是否有一个计划或梦想？是否想在执行的时候需要有个地方将过程纪录下来？啄米为你提供了一个平台来纪录你每天的脚步，和你一起分享成功路上的喜悦。</p>
+                    <div class="mt-60 align-c applyformbox pos-rel outerglow">
+    	                <form id="applyform" class="cf">
+    		                <label for="applyform-email" id="applyform-email-hint" class="gry pos-abs">输入您的电子邮件地址</label>
+    		                <input type="text" id="applyform-email" class="fb-input mgry">
+                            <div class="applyform-button col-r">
+                                <input type="button" value="申请邀请码" id="applyform-submit" class="whi hand txt-xl" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+	            <div id="footer">
+		            <div class="pw align-c cf">
+                        <span class="footer-siteinfo">&copy;&nbsp;2011&nbsp;啄米网&nbsp;沪ICP备198003220号&nbsp;</span>
+                        <a class="footer-weibo ml-5 hand">关注啄米网：</a>
+                    </div>
+	            </div>
+		    </div>
+	    </div>
+    </div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="_scripts/lib/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="_scripts/ui/topbar.js"></script>
+
+</body>
+</html>

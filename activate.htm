@@ -6,22 +6,24 @@
 
 	<meta content="啄米网" name="keywords" />
     <meta content="啄米网" name="description" />
+    <meta content="啄米网" name="Author">
 
     <link type="image/x-icon" rel="Shortcut Icon" href="favicon.ico" />
     <link type="image/x-icon" rel="Bookmark" href="favicon.ico" />
-    
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+    <meta name="viewport" content="width=1024; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 
     <!-- Style Sheet -->
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/base.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/common.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/frame.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/page/activate.css" />
 
 </head>
 <body>
     <div id="header">
         <div id="topbar" class="pw align-c pos-rel">
-            <div id="topbar-login">
+            <div id="topbar-login" class="topbar-content hidden">
                 <div class="cf">
     	            <h2 class="whi txt-3xl col-l">你好，请从这里登录！</h2>
     	            <a class="tb-login-forgetpass pur ml-10 hand">忘记密码</a>
@@ -34,15 +36,20 @@
                     <input type="button" value="登录" class="loginform-submit whi ml-15 hand" />
     	        </form>
             </div>
+            <div id="topbar-regist" class="topbar-content hidden">
+                <br />
+                <br />
+                <br />
+            </div>
             <ul id="topbar-menu" class="pos-abs hor whi">
                 <li>
-                    <a class="hand">用户注册</a>
+                    <a href="#topbar-regist" class="hand">用户注册</a>
                 </li>
                 <li>
-                    <a class="active hand">登录</a>
+                    <a href="#topbar-login" class="hand">登录</a>
                 </li>
             </ul>
-    	    <a id="topbar-btn-close" class="hand pos-abs pur">关闭登录</a>
+    	    <a id="topbar-btn-close" class="hand pos-abs pur hidden">关闭登录</a>
         </div>
 		<div id="head" class="pw align-c cf">
 	    	<h1 id="logo" class="col-l">
@@ -65,57 +72,70 @@
                 <form action="" id="form-createuser">
                     <fieldset class="formbox">
                         <legend class="fb-title hidden">激活个人账号</legend>
-                        <div>
-                            <p class="bla mt-20">
-                                <label for="fb-mail">电子邮件：</label>
+                        <div class="col-l col-n">
+                            <div>
+                                <p class="bla mt-20">
+                                    <label for="fb-mail">电子邮件：</label>
+                                </p>
+                                <p class="mt-5 pos-rel">
+                                    <input type="text" id="fb-mail" class="fb-input outerglow" autofocus />
+                                    <span class="pos-abs fb-tip whi hidden">
+                                        <sup class="pos-abs icon-formerr"></sup>
+                                        <span class="fb-tip-msg"></span>
+                                    </span>
+                                </p>
+                                <p class="gra mt-5">用来登录啄米，请牢记此Email</p>
+                            </div>
+                            <div>
+                                <p class="bla mt-20">
+                                    <label for="fb-nickname">起个拉风的用户名：</label>
+                                </p>
+                                <p class="mt-5 pos-rel">
+                                    <input type="text" id="fb-username" class="fb-input outerglow" />
+                                    <span class="pos-abs fb-tip whi hidden">
+                                        <sup class="pos-abs icon-formerr"></sup>
+                                        <span class="fb-tip-msg"></span>
+                                    </span>
+                                </p>
+                                <p class="gra mt-5">使用你在网上常用昵称，小于12个字符</p>
+                            </div>
+                            <div>
+                                <p class="bla mt-20">
+                                    <label for="fb-password">设置密码：</label>
+                                </p>
+                                <p class="mt-5 pos-rel">
+                                    <input type="password" id="fb-password" class="fb-input outerglow" />
+                                    <span class="pos-abs fb-tip whi hidden">
+                                        <sup class="pos-abs icon-formerr"></sup>
+                                        <span class="fb-tip-msg"></span>
+                                    </span>
+                                </p>
+                                <p class="gra mt-5"">6-16个字符</p>
+                            </div>
+                            <p class="mt-15">
+                                <input type="checkbox" id="fb-chk-protocal" class="fb-chkbox hidden" />
+                                <label for="fb-chk-protocal">提交完该表单，就意味着您同意了《<a href="plan.htm" class="ora">使用协议</a>》</label>
                             </p>
-                            <p class="mt-5 pos-rel">
-                                <input type="text" id="fb-mail" class="fb-input outerglow" autofocus />
-                                <span class="pos-abs fb-tip whi hidden">
-                                    <sup class="pos-abs icon-formerr"></sup>
-                                    <span class="fb-tip-msg"></span>
-                                </span>
-                            </p>
-                            <p class="gry mt-5">用来登录啄米，请牢记此Email</p>
                         </div>
-                        <div>
-                            <p class="bla mt-20">
-                                <label for="fb-nickname">起个拉风的用户名：</label>
-                            </p>
-                            <p class="mt-5 pos-rel">
-                                <input type="text" id="fb-username" class="fb-input outerglow" />
-                                <span class="pos-abs fb-tip whi hidden">
-                                    <sup class="pos-abs icon-formerr"></sup>
-                                    <span class="fb-tip-msg"></span>
-                                </span>
-                            </p>
-                            <p class="gry mt-5">使用你在网上常用昵称，小于12个字符</p>
+                        <div class="col-r col-w txtalign-c">
+                            <div class="form-createuser-action mt-25">
+                                <p class="txt-9xl gry italic"><sub class="txt-3xl">"</sub>死磕是一种精神，它与时间有关<sup class="txt-3xl">"</sup></p>
+                                <p class="mt-50">
+                                    <a id="fb-createuser" href="plan.htm" class="btn-join ndr txt-7xl outerglow">
+                                        <span>欢迎加入啄米</span>
+                                    </a>
+                                    <span class="hidden">
+                                        <input type="submit" id="fb-createuser" class="btn-join outerglow" value="欢迎加入啄米" />
+                                    </span>
+                                </p>
+                                <p class="txt-8xl gry mt-10">或</p>
+                                <p class="mt-15">
+                                    <a class="flexwidth btn-weibo">
+                                        <span class="fw-l">使用微博账号登录</span>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <p class="bla mt-20">
-                                <label for="fb-password">设置密码：</label>
-                            </p>
-                            <p class="mt-5 pos-rel">
-                                <input type="password" id="fb-password" class="fb-input outerglow" />
-                                <span class="pos-abs fb-tip whi hidden">
-                                    <sup class="pos-abs icon-formerr"></sup>
-                                    <span class="fb-tip-msg"></span>
-                                </span>
-                            </p>
-                            <p class="gry mt-5"">6-16个字符</p>
-                        </div>
-                        <p class="mt-15">
-                            <input type="checkbox" id="fb-chk-protocal" class="fb-chkbox" />
-                            <label for="fb-chk-protocal">我已同意并接受《<a href="plan.htm" class="ora">使用协议</a>》</label>
-                        </p>
-                        <p class="mt-18">
-                            <a id="fb-createuser" href="plan.htm" class="btn-yes btn-disable">
-                                欢迎加入啄米
-                            </a>
-                            <span class="hidden">
-                                <input type="submit" id="fb-createuser" class="btn-yes outerglow" value="创建用户" />
-                            </span>
-                        </p>
                     </fieldset>
                 </form>
 		    </div>
@@ -123,12 +143,17 @@
     </div>
 	<div id="footer">
 		<div class="pw align-c cf">
-            <div class="footer-siteinfo col-l ml-10">&copy; 2011 啄米网 沪ICP备198003220号</div>
+            <div class="footer-siteinfo col-l ml-10">&copy;&nbsp;2011&nbsp;啄米网&nbsp;沪ICP备198003220号</div>
             <div class="col-r mr-3">
                 <span class="footer-advice">梦想这东西和经典一样，永远不会因为时间而褪色，反而更显珍贵</span>
                 <a class="footer-weibo ml-5 hand">关注啄米网：</a>
             </div>
         </div>
 	</div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="_scripts/lib/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="_scripts/ui/topbar.js"></script>
+
 </body>
 </html>

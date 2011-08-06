@@ -1,0 +1,52 @@
+/*========================================================
+    File:        activate.css
+    Description: CSS Styles for activate page
+========================================================*/
+
+/* + Activate CSS - Begin */
+#form-createuser
+{
+    padding-bottom: 40px;
+}
+.form-createuser-action
+{
+    padding-left: 80px;
+    min-height: 250px;
+    _height: 250px;
+    background: url(../../_imgs/high/icon_sumup.png) left center no-repeat;
+}
+.form-createuser-action .gry
+{
+    letter-spacing: 1px;
+}
+.btn-join
+{
+    border: 2px solid #f7af80;
+    padding: 0 20px 0 30px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    cursor: pointer;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #f1782a;
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #f1782a, #fac7a6); 
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fac7a6), to(#f1782a)); 
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#fac7a6, #f1782a); 
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(#fac7a6, #f1782a);
+}
+.btn-join span
+{
+    display: block;
+    color: #fff;
+    line-height: 2em;
+    padding-right: 45px;
+    background: url(../../_imgs/high/icon_join.png) right center no-repeat;
+}
+/* + Activate CSS - End */
