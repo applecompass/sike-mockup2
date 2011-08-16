@@ -50,7 +50,7 @@ html
     height: 22px;
     bottom: -21px;
     left: 47%;
-    background: url(../../_imgs/high/icon_prong.png) left top no-repeat;
+    background: url(../../_imgs/high/icon_prong_down.png) left top no-repeat;
 }
 /* + Apply Form */
 .applyformbox
@@ -107,7 +107,7 @@ html
     line-height: 32px;
     border-width: 0;
     padding: 0 15px 0 10px;
-    background: url(../../_imgs/high/icon_arrow_r.png) right center no-repeat;
+    background: url(../../_imgs/high/icon_arrow_whi_r.png) right center no-repeat;
 }
 
 /* + footer */

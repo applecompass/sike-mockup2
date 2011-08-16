@@ -1,0 +1,231 @@
+<!Doctype HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>啄米</title>
+
+	<meta content="啄米网" name="keywords" />
+    <meta content="啄米网" name="description" />
+    <meta content="啄米网" name="Author">
+
+    <link type="image/x-icon" rel="Shortcut Icon" href="favicon.ico" />
+    <link type="image/x-icon" rel="Bookmark" href="favicon.ico" />
+
+    <meta name="viewport" content="width=1024; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+    <!-- Style Sheet -->
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/base.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/common.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/frame.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/form.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/button.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/page/account.css" />
+
+</head>
+<body>
+    <div id="header">
+        <div id="topbar" class="pw align-c pos-rel">
+            <div id="topbar-login" class="topbar-content hidden">
+                <div class="cf">
+    	            <h2 class="whi txt-3xl col-l">你好，请从这里登录！</h2>
+    	            <a class="tb-login-forgetpass pur ml-10 hand">忘记密码</a>
+                </div>
+    	        <form id="loginform" class="clear mt-10 ml-45">
+    		        <label for="loginform-username" class="pur">用户名：</label>
+    		        <input type="text" id="loginform-username" class="fb-input outerglow">
+    		        <label for="loginform-password" class="pur ml-5">密码：</label>
+    		        <input type="text" id="loginform-password" class="fb-input outerglow">
+                    <input type="button" value="登录" class="loginform-submit whi ml-15 hand" />
+    	        </form>
+            </div>
+            <div id="topbar-regist" class="topbar-content hidden">
+                <br />
+                <br />
+                <br />
+            </div>
+            <ul id="topbar-menu" class="pos-abs hor whi">
+                <li>
+                    <a href="#topbar-regist" class="hand">用户注册</a>
+                </li>
+                <li>
+                    <a href="#topbar-login" class="hand">登录</a>
+                </li>
+            </ul>
+    	    <a id="topbar-btn-close" class="hand pos-abs pur hidden">关闭登录</a>
+        </div>
+		<div id="head" class="pw align-c cf">
+	    	<h1 id="logo" class="col-l">
+                <img src="_imgs/high/logo.png" alt="啄米网" title="死磕是一种精神" />
+	        	<p class="txt-m">死磕是一种精神</p>
+	    	</h1>
+		</div>
+	</div>
+	<!--nav></nav-->
+    <div id="main">
+        <div id="titlebar">
+            <div class="pw align-c cf">
+		        <h2 class="italic col-l ml-60 txt-6xl">更改个人资料/头像</h2>
+                <a class="titlebar-link ora col-r hand mr-10"></a>
+            </div>
+        </div>
+	    <div id="content" class="pw align-c">
+		    <div id="container">
+			    <h2 class="ora italic txt-4xl">个人基本信息/头像</h2>
+                <div class="cf">
+                    <div class="col-l col-n">
+                        <p class="remind italic mt-15 mgry">注意：您的电邮地址是您的登录名，无法修改</p>
+                        <form action="" id="accountform">
+                            <fieldset class="formbox">
+                                <legend class="bold bla txt-xxl fb-title hidden">修改个人基本资料</legend>
+                                <div>
+                                    <p class="mt-15">
+                                        <span class="accountform-label">
+                                            <label for="accountform-email">电子邮件：</label>
+                                        </span>
+                                        <input type="text" id="accountform-email" class="fb-input outerglow" readonly="readonly" />
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="mt-15">
+                                        <span class="accountform-label">
+                                            <label for="accountform-username">用户名：</label>
+                                        </span>
+                                        <input type="text" id="accountform-username" class="fb-input outerglow" />
+                                    </p>
+                                    <p class="gry mt-5 accountform-hint">使用你在网上常用昵称，小于12个字符</p>
+                                </div>
+                                <div>
+                                    <p class="mt-15">
+                                        <span class="accountform-label">
+                                            <label for="accountform-password">改变密码：</label>
+                                        </span>
+                                        <input type="password" id="accountform-password" class="fb-input outerglow" />
+                                    </p>
+                                    <p class="gry mt-5 accountform-hint">6-16个字符</p>
+                                </div>
+                                <div>
+                                    <p class="azure mt-15">
+                                        <span class="accountform-label">
+                                            <label for="accountform-gender">性别：</label>
+                                        </span>
+                                        <input type="radio" name="accountform-gender-femail" value="女" />
+                                        <span>女</span>
+                                        <input type="radio" name="accountform-gender-mail" value="男" class="ml-10" />
+                                        <span>男</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="azure mt-15">
+                                        <span class="accountform-label">
+                                            <label for="accountform-birthday">生日：</label>
+                                        </span>
+                                        <select>
+                                            <option>一月</option>
+                                        </select>
+                                        <select>
+                                            <option>1</option>
+                                        </select>
+                                        <select>
+                                            <option>1980</option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="azure mt-15">
+                                        <span class="accountform-label">
+                                            <label for="accountform-stature">身高：</label>
+                                        </span>
+                                        <input type="text" id="accountform-stature" class="fb-input outerglow accountform-narrow" />
+                                        <em>CM</em>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="azure mt-15">
+                                        <span class="accountform-label">
+                                            <label for="accountform-avoirdupois">体重：</label>
+                                        </span>
+                                        <input type="text" id="accountform-avoirdupois" class="fb-input outerglow accountform-narrow" />
+                                        <em>KG</em>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="azure mt-15">
+                                        <span class="accountform-label">
+                                            <label for="accountform-address">所在地：</label>
+                                        </span>
+                                        <select>
+                                            <option>上海</option>
+                                        </select>
+                                        <select>
+                                            <option>上海</option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="azure mt-15">
+                                        <span class="accountform-label col-l">
+                                            <label for="accountform-synopsis">个人简介：</label>
+                                        </span>
+                                        <textarea id="accountform-synopsis" class="fb-textarea ml-3" rows="5"></textarea>
+                                    </p>
+                                </div>
+                                <p class="mt-25">
+                                    <a id="fb-createuser" href="plan.htm" class="btn-yes hand">
+                                        保存更新
+                                    </a>
+                                    <span class="hidden">
+                                        <input type="submit" id="fb-createuser" class="btn-yes outerglow" value="保存更新" />
+                                    </span>
+                                </p>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="col-l col-w">
+                        <p class="italic mgry mt-15">当前使用的个人头像</p>
+                        <div class="mt-10 cf">
+                            <img src="_imgs/photos/xl.jpg" alt="" class="col-l" />
+                            <div class="ml-20 col-l">
+                                <p>上传新头像</p>
+                                <input id="uploadheadshot" type="file" class="mt-10" />
+                                <p class="gra mt-8 italic">
+                                    支持gif、jpg、png等多种格式图片<br />
+                                    请选择新的照片文件，文件需小于10MB<br />
+                                    上传反动、色情等照片将导致您的帐号被删除
+                                </p>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div class="mt-30">
+                            <a id="fb-createuser" href="plan.htm" class="btn-yes hand">
+                                保存更新
+                            </a>
+                            <span class="txt-7xl gra ml-20">或</span>
+                            <a id="fb-createuser" href="plan.htm" class="btn-no hand ml-20">
+                                保存更新
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="safety mt-30 italic">
+                    <span class="mgry">我们重视您的信息安全。您的隐私对我们很重要。我们在任何时候决不会出售任何您给我们提供的信息。阅读我们的隐私政策。请点击</span>
+                    <a href="#this" class="ora hand">这里</a>
+                </p>
+		    </div>
+	    </div>
+    </div>
+	<div id="footer">
+		<div class="pw align-c cf">
+            <div class="footer-siteinfo col-l ml-10">&copy;&nbsp;2011&nbsp;啄米网&nbsp;沪ICP备198003220号</div>
+            <div class="col-r mr-3">
+                <span class="footer-advice">梦想这东西和经典一样，永远不会因为时间而褪色，反而更显珍贵</span>
+                <a class="footer-weibo ml-5 hand">关注啄米网：</a>
+            </div>
+        </div>
+	</div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="_scripts/lib/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="_scripts/ui/topbar.js"></script>
+
+</body>
+</html>

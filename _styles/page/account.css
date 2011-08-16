@@ -1,0 +1,44 @@
+/*========================================================
+    File:        account.css
+    Description: CSS Styles for account page
+========================================================*/
+
+/* + Account CSS - Begin */
+
+#container
+{
+    padding-bottom: 20px;
+}
+.col-n
+{
+    width: 49%;
+    background: url(../../_imgs/high/sepline.png) right center no-repeat;
+}
+.col-w
+{
+    width: auto;
+    padding: 2px 0 0 60px;
+}
+
+#accountform .fb-input,
+#accountform .fb-textarea
+{
+    width: 260px;
+}
+.accountform-label
+{
+    display: inline-block;
+    *display: inline;
+    width: 62px;
+}
+.accountform-narrow
+{
+    min-width: 100px;
+    width: 100px;
+}
+.accountform-hint
+{
+    padding-left: 66px;
+}
+    
+/* + Account CSS - End */

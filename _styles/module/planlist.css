@@ -1,0 +1,49 @@
+/*========================================================
+    File:        planlist.css
+    Description: CSS Styles for planlist
+========================================================*/
+
+/* + Plan List */
+#planlist li
+{
+    margin: 0 0 0 25px;
+}
+#planlist li.first
+{
+    margin-left: 0;
+}
+#planlist a img,
+#planlist a span
+{
+    display: block;
+}
+#planlist a img
+{
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+#planlist a img
+{
+    border: 2px solid #fff;
+}
+#planlist a:hover img
+{
+    border: 2px solid #ccc;
+}
+#planlist li.active a img
+{
+    border: 2px solid #e66a19;
+}
+#planlist li.active a span
+{
+    color: #e86c1c;
+}
+#planlist li.planlist-customize a img
+{
+    border-width: 0;
+}
+#planlist a span
+{
+    margin-top: 6px;
+}

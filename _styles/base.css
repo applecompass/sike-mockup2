@@ -86,7 +86,9 @@ a.ndr:hover     {   text-decoration: none;  }
 .nohand         {   cursor: default;        }
 .ltspacing      {   letter-spacing: -1px;   }
 .txtindent      {   text-indent: -5000px; overflow: hidden;     }
+.block          {   display: block;    }
 .inlineblock    {   display: inline-block; _display: inline; _zoom: 1;      }
+.zerolineheight {   line-height: 0;    }
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 /* - Font Size */

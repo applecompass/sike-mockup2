@@ -1,0 +1,26 @@
+/*========================================================
+    File:        fans.css
+    Description: CSS Styles for fans
+========================================================*/
+
+/* + Fans Box */
+#fansbox h2
+{
+    border-bottom-width: 0;
+    padding: 0;
+}
+.fanslist li
+{
+    width: 33%;
+    margin: 10px 0 0;
+    text-align: center;
+}
+.fanslist li a img
+{
+    display: block;
+}
+.fanslist li a
+{
+    display: inline-block;
+    *display: inline;
+}

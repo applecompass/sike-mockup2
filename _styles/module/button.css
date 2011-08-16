@@ -1,0 +1,109 @@
+/*========================================================
+    File:        button.css
+    Description: CSS Styles for buttons
+========================================================*/
+
+/* - Buttons */
+.btn-yes
+{
+    color: #fff;
+    line-height: 2em;
+    border: 2px solid #f7af80;
+    padding: 0 15px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    cursor: pointer;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f1782a;
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #f1782a, #fac7a6); 
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fac7a6), to(#f1782a)); 
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#fac7a6, #f1782a); 
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(#fac7a6, #f1782a);
+}
+.btn-yes:hover
+{
+    text-decoration: none;
+}
+
+.btn-no
+{
+    color: #565656;
+    line-height: 2em;
+    border: 2px solid #d8d8d8;
+    padding: 0 15px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    cursor: pointer;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #b9b9b9;
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #b9b9b9, #e5e5e5); 
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e5e5e5), to(#b9b9b9)); 
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#e5e5e5, #b9b9b9); 
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(#e5e5e5, #b9b9b9);
+}
+.btn-no:hover
+{
+    text-decoration: none;
+}
+.btn-disable
+{
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    cursor: default;
+}
+
+.btn-follow
+{
+    color: #fff;
+    line-height: 2em;
+    border: 1px solid #6ebb30;
+    padding: 0 15px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    cursor: pointer;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #7cc93d;
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #7cc93d, #c0f298); 
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c0f298), to(#7cc93d)); 
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#c0f298, #7cc93d); 
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(#c0f298, #7cc93d);
+}
+
+.btn-weibo
+{
+    padding-left: 29px;
+    background: url(../../_imgs/high/btn_weibo_l.png) left top no-repeat;
+}
+.btn-weibo .fw-l
+{
+    height: 21px;
+    line-height: 20px;
+    color: #fff;
+    padding: 0 15px 0 12px;
+    background: url(../../_imgs/high/btn_weibo_r.png) right top no-repeat;
+    text-shadow: 0 1px 2px #333;
+}

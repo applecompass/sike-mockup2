@@ -17,6 +17,9 @@
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/base.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/common.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/frame.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/form.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/points.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/planlist.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/page/plan.css" />
 
 </head>
@@ -72,15 +75,18 @@
 		    <div id="container" class="pos-rel">
 			    <div class="cf mt-8">
                     <div class="col-l col-n">
-                        <div id="pointsbox" class="cf">
-                            <a class="pointsbox-headshot col-l hand">
+                        <div id="pointsbox" class="cf mt-10">
+                            <a class="pointsbox-headshot col-l hand pos-rel">
                                 <img src="_imgs/photos/l.jpg" />
+                                <span class="pos-abs pointsbox-num whi">5</span>
                             </a>
                             <div class="col-l ml-13">
-                                <p class="pointsbox-name ml-3 mt-3 bla">小舒一路狂奔</p>
+                                <p class="pointsbox-name ml-3 bla">小舒一路狂奔
+                                    <span class="pointsbox-gender-male col-r mr-5"></span>
+                                </p>
                                 <div class="pointsbox-bar mt-8">
                                     <div class="pointsbox-progress col-l whi">O<span class="ml-5 txt-s">hrs</span></div>
-                                    <div class="pointsbox-num col-r bla">
+                                    <div class="pointsbox-like col-r bla">
                                         <span>1</span>
                                     </div>
                                 </div>
@@ -98,7 +104,7 @@
                 <div id="planlistbox" class="container-sep-t mt-15">
                     <p class="gra txt-xl txtalign-c mt-5">看看目前最多的人想做的计划是什么：</p>
                     <ul id="planlist" class="hor">
-                        <li class="first planlist-run">
+                        <li class="planlist-run active first">
                             <a class="hand txtalign-c">
                                 <img src="_imgs/icons/run.png" />
                                 <span class="mgry txt-xl">跑步</span>
@@ -136,7 +142,7 @@
                         </li>
                     </ul>
                 </div>
-                <p class="remind italic mt-15">选择要执行的计划后，请在下列选择计划时间长度：</p>
+                <p class="remind italic mt-15 ora">选择要执行的计划后，请在下列选择计划时间长度：</p>
                 <p class="planlistbox-btn-more-container pos-abs txtalign-c">
                     <a id="planlistbox-btn-more" class="hand shrink txt-xl bla inlineblock">收起其它活动</a>
                 </p>

@@ -1,0 +1,20 @@
+/*========================================================
+    File:        activity.css
+    Description: CSS Styles for activity
+========================================================*/
+
+/* + Activity */
+#activity h2
+{
+    border-width: 0;
+    padding: 0;
+}
+#activity h2 span
+{
+    line-height: 22px;
+}
+.activity-content a
+{
+    display: block;
+    line-height: 0;
+}

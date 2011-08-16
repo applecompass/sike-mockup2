@@ -1,0 +1,56 @@
+/*========================================================
+    File:        form.css
+    Description: CSS Styles for forms
+========================================================*/
+
+/* + Form */
+.formbox
+{
+}
+.formbox .gra
+{
+    color: #a3a3a3;
+}
+.fb-title
+{
+}
+.fb-input
+{
+    border: 1px solid #c3c3c3;
+    line-height: 1.7em;
+    height: 1.7em;
+    min-width: 210px;
+    padding: 0 3px;
+}
+.fb-textarea
+{
+    border: 1px solid #c3c3c3;
+    line-height: 1.7em;
+    min-width: 210px;
+    padding: 0 3px;
+    resize: vertical;
+}
+.formbox input.btn-yes
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.fb-chkbox
+{
+}
+.fb-tip
+{
+    line-height: 1.7em;
+    height: 1.7em;
+    margin: 1px 0 0 15px;
+    padding: 0 10px;
+    background-color: #16c4f3;
+}
+.icon-formerr
+{
+    width: 6px;
+    height: 7px;
+    left: -6px;
+    top: 6px;
+    background: url(../_imgs/high/icon_formerr.png) left top no-repeat;
+}

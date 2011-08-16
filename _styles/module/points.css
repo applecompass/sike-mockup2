@@ -1,0 +1,93 @@
+/*========================================================
+    File:        points.css
+    Description: CSS Styles for points box
+========================================================*/
+
+/* - Points Box */
+.pointsbox-headshot
+{
+    line-height: 0;
+    display: block;
+    border: 1px solid #999;
+}
+.pointsbox-headshot img
+{
+    width: 48px;
+    height: 48px;
+    display: block;
+    -moz-box-shadow: 1px 2px 5px #666;
+    -webkit-box-shadow: 1px 2px 5px #666;
+    box-shadow: 1px 2px 5px #666;
+}
+.pointsbox-num
+{
+    width: 24px;
+    height: 25px;
+    top: -12px;
+    right: -12px;
+    text-align: center;
+    line-height: 23px;
+    background: url(../../_imgs/high/bg_num.png) left top no-repeat;
+}
+.pointsbox-name
+{
+    line-height: 17px;
+    max-width: 122px;
+    width: 122px;
+}
+.pointsbox-gender-male,
+.pointsbox-gender-female
+{
+    width: 14px;
+    height: 17px;
+    background: url(../../_imgs/high/icon_male.png) right center no-repeat;
+}
+.pointsbox-gender-female
+{
+    background-image: url(../../_imgs/high/icon_female.png);
+}
+.pointsbox-bar
+{
+    width: 122px;
+    height: 20px;
+    line-height: 20px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #cacaca;
+    background-color: #a9a9a9;
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #fff, #a9a9a9); 
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a9a9a9), to(#fff)); 
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#a9a9a9, #fff); 
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(#a9a9a9, #fff);
+}
+.pointsbox-progress
+{
+    padding: 0 6px;
+    background-color: #ff9c00;
+}
+.pointsbox-like
+{
+    padding: 0 5px 0 7px;
+    background-color: #dee0df;
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #dee0df, #fff); 
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#dee0df)); 
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#fff, #dee0df); 
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(#fff, #dee0df);
+}
+.pointsbox-like span
+{
+    padding-right: 16px;
+    background: url(../../_imgs/high/icon_star.png) right center no-repeat;
+}

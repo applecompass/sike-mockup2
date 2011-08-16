@@ -39,7 +39,7 @@
                 #topbar-menu li
                 {
                     background-color: #b49adc;
-                    margin-left: 3px;
+                    margin-left: 1px;
                     border-top: 1px solid #61468b;
                     
                     -moz-border-radius: 0 0 6px 6px;
@@ -130,7 +130,7 @@
             #container
             {
                 background-color: #fff;
-                padding: 15px 35px;
+                padding: 15px 30px;
         
                 -moz-border-radius: 10px;
                 -webkit-border-radius: 10px;
@@ -174,4 +174,31 @@
         {
             background-image: url(../_imgs/high/bkmk_sina.png);
         }
+    
+    /* + Slide Navigation */
+    #slidenav
+    {
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+        #slidenav-btn-prev
+        {
+            display: block;
+            width: 40px;
+            height: 80px;
+            left: 100px;
+            top: 300px;
+            background: url(../_imgs/high/slidenav_prev.png) left top no-repeat;
+        }
+        #slidenav-btn-next
+        {
+            display: block;
+            width: 40px;
+            height: 80px;
+            right: 100px;
+            top: 300px;
+            background: url(../_imgs/high/slidenav_next.png) left top no-repeat;
+        }
+    
 /* + Frame CSS - End */

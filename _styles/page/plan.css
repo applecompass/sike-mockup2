@@ -47,118 +47,11 @@
     background-repeat: no-repeat;
 }
 
-/* + Points Box */
-.pointsbox-headshot
-{
-    line-height: 0;
-    display: block;
-    border: 1px solid #999;
-}
-.pointsbox-headshot img
-{
-    width: 48px;
-    height: 48px;
-    display: block;
-}
-.pointsbox-bar
-{
-    width: 122px;
-    height: 20px;
-    line-height: 20px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    overflow: hidden;
-    border: 1px solid #cacaca;
-    background-color: #a9a9a9;
-    /* Firefox 3.6+ */
-    background: -moz-linear-gradient(100% 100% 90deg, #fff, #a9a9a9); 
-    /* Safari 4-5, Chrome 1-9 */
-    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a9a9a9), to(#fff)); 
-    /* Safari 5.1+, Chrome 10+ */
-    background: -webkit-linear-gradient(#a9a9a9, #fff); 
-    /* Opera 11.10+ */
-    background: -o-linear-gradient(#a9a9a9, #fff);
-}
-.pointsbox-progress
-{
-    padding: 0 6px;
-    background-color: #ff9c00;
-}
-.pointsbox-num
-{
-    padding: 0 5px 0 7px;
-    background-color: #dee0df;
-    /* Firefox 3.6+ */
-    background: -moz-linear-gradient(100% 100% 90deg, #dee0df, #fff); 
-    /* Safari 4-5, Chrome 1-9 */
-    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#dee0df)); 
-    /* Safari 5.1+, Chrome 10+ */
-    background: -webkit-linear-gradient(#fff, #dee0df); 
-    /* Opera 11.10+ */
-    background: -o-linear-gradient(#fff, #dee0df);
-}
-.pointsbox-num span
-{
-    padding-right: 16px;
-    background: url(../../_imgs/high/icon_star.png) right center no-repeat;
-}
-
-/* + Plan List */
-#planlist
-{
-    margin-left: -50px;
-}
-#planlist li
-{
-    margin: 25px 0 0 78px;
-}
-#planlist a img,
-#planlist a span
-{
-    display: block;
-}
-#planlist a img
-{
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-}
-#planlist a img
-{
-    border: 2px solid #fff;
-}
-#planlist a:hover img
-{
-    border: 2px solid #ccc;
-}
-#planlist li.planlist-customize a img
-{
-    border-width: 0;
-}
-#planlist a span
-{
-    margin-top: 6px;
-}
-
 #plan-name
 {
     font-size: 60px;
     font-weight: 400;
 }
-
-.remind
-{
-    line-height: 19px;
-    min-height: 21px;
-    _height: 21px;
-    padding-left: 28px;
-    background: url(../../_imgs/high/icon_remind.png) left top no-repeat;
-    color: #ef7526;
-}
-
 .planlistbox-btn-more-container
 {
     bottom: -26px;
@@ -169,47 +62,57 @@
     height: 26px;
     line-height: 25px;
     padding: 0 13px 0 37px;
-    background: #fff url(../../_imgs/high/icon_arrow_up.png) 12px center no-repeat;
+    background: #fff url(../../_imgs/high/icon_btnarrow_up.png) 12px center no-repeat;
     -moz-border-radius: 0 0 5px 5px;
     -webkit-border-radius: 0 0 5px 5px;
     border-radius: 0 0 5px 5px;
 }
 
-    /* - Plan Hour Box */
-    #planhour li
-    {
-        width: 240px;
-        padding: 0 25px;
-    }
-    .ph-one,
-    .ph-ten,
-    .ph-hdrd
-    {
-        display: block;
-        cursor: pointer;
-        -moz-border-radius: 6px;
-        -webkit-border-radius: 6px;
-        border-radius: 6px;
-        color: #fff;
-        font-size: 60px;
-        line-height: 2em;
-    }
-    .ph-one
-    {
-        background-color: #fdc51a;
-    }
-    .ph-ten
-    {
-        background-color: #f3a216;
-    }
-    .ph-hdrd
-    {
-        background-color: #f37916;
-    }
-    .ph-unit
-    {
-        font-size: 50%;
-        margin-left: 8px;
-    }
+/* + Plan List */
+#planlist
+{
+    margin: 25px 0 0 25px;
+}
+#planlist li
+{
+    margin: 0 0 0 78px;
+}
+
+/* - Plan Hour Box */
+#planhour li
+{
+    width: 240px;
+    padding: 0 25px;
+}
+.ph-one,
+.ph-ten,
+.ph-hdrd
+{
+    display: block;
+    cursor: pointer;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 60px;
+    line-height: 2em;
+}
+.ph-one
+{
+    background-color: #fdc51a;
+}
+.ph-ten
+{
+    background-color: #f3a216;
+}
+.ph-hdrd
+{
+    background-color: #f37916;
+}
+.ph-unit
+{
+    font-size: 50%;
+    margin-left: 8px;
+}
     
 /* + Plan CSS - End */

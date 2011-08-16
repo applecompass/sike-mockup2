@@ -1,0 +1,61 @@
+/*========================================================
+    File:        mypage.css
+    Description: CSS Styles for plan page
+========================================================*/
+
+/* + Mypage CSS - Begin */
+.col-w
+{
+    width: 75%;
+}
+.col-n
+{
+    width: 22%;
+}
+
+/* + Profile Box */
+.profilebox-headshot
+{
+    border: 1px solid #999;
+}
+.profilebox-headshot img
+{
+    display: block;
+}
+
+/* + Plan List */
+#planlist li
+{
+    margin: 0 0 0 30px;
+}
+
+/* + Plan Chart */
+#planchart
+{
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #ebedec;
+    padding: 15px;
+}
+/* - Chart Box */
+.chartbox-container
+{
+    line-height: 0;
+}
+
+.planchart-btn-more-container
+{
+    bottom: -26px;
+    width: 92.5%;
+}
+#planchart-btn-more
+{
+    height: 26px;
+    line-height: 25px;
+    padding: 0 13px 0 33px;
+    background: #ebedec url(../../_imgs/high/icon_info.png) 12px center no-repeat;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
