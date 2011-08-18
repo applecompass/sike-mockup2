@@ -38,18 +38,38 @@
             }
                 #topbar-menu li
                 {
-                    background-color: #b49adc;
                     margin-left: 1px;
                     border-top: 1px solid #61468b;
                     
                     -moz-border-radius: 0 0 6px 6px;
                     -webkit-border-radius: 0 0 6px 6px;
                     border-radius: 0 0 6px 6px;
+                    
+                    background-color: #a180d4;
+                    /* Firefox 3.6+ */
+                    background: -moz-linear-gradient(100% 100% 90deg, #a180d4, #cfbee9); 
+                    /* Safari 4-5, Chrome 1-9 */
+                    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+                    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cfbee9), to(#a180d4)); 
+                    /* Safari 5.1+, Chrome 10+ */
+                    background: -webkit-linear-gradient(#cfbee9, #a180d4); 
+                    /* Opera 11.10+ */
+                    background: -o-linear-gradient(#cfbee9, #a180d4);
                 }
                 #topbar-menu .active
                 {
                     color: #61468b;
                     border-top: 1px solid #b49adc;
+                    
+                    /* Firefox 3.6+ */
+                    background: -moz-linear-gradient(100% 100% 90deg, #a180d4, #b49adc); 
+                    /* Safari 4-5, Chrome 1-9 */
+                    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+                    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b49adc), to(#a180d4)); 
+                    /* Safari 5.1+, Chrome 10+ */
+                    background: -webkit-linear-gradient(#b49adc, #a180d4); 
+                    /* Opera 11.10+ */
+                    background: -o-linear-gradient(#b49adc, #a180d4);
                 }
                 #topbar-menu li a
                 {

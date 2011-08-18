@@ -1,22 +1,27 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// File:            plan.js
+// File:            x.js
 // Defines:
 // Dependencies:
-// Description:     this is the document ready functions for plan page
+// Description:     load js for x page
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Document Ready.
-jQuery(function($) {
+// Closure
+(function ($) {
 
-    ZM.UI.Plan.init();
+
+})(jQuery);
+
+// Document Ready.
+jQuery(function ($) {
+
 
 });
 
 // Window Onload.
 ZM.windowOnload = window.onload;
-window.onload = function() {
+window.onload = function () {
     if (ZM.windowOnload) {
         ZM.windowOnload();
     }

@@ -12,6 +12,10 @@
 {
     margin-left: 0;
 }
+#planlist li a:hover
+{
+    text-decoration: none;
+}
 #planlist a img,
 #planlist a span
 {
@@ -19,9 +23,9 @@
 }
 #planlist a img
 {
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
 }
 #planlist a img
 {

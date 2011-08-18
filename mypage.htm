@@ -17,12 +17,15 @@
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/base.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/common.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/frame.css" />
+    <!-- Module -->
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/form.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/button.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/points.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/feeds.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/activity.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/planlist.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/hotplan.css" />
+    <!-- Page -->
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/page/mypage.css" />
 
 </head>
@@ -49,7 +52,7 @@
             </div>
             <ul id="topbar-menu" class="pos-abs hor whi">
                 <li>
-                    <a href="#topbar-regist" class="hand">用户注册</a>
+                    <a href="apply.htm" class="hand">用户注册</a>
                 </li>
                 <li>
                     <a href="#topbar-login" class="hand">登录</a>
@@ -72,7 +75,7 @@
                     <p class="whi txt-m italic">
                         我们发现你正在进行跑步计划。如果你可以完善个人资料我们可以为你提供更好的服务。点击上方个人设置完善个人资料。
                     </p>
-                    <a class="titlebar-tip-btn-close pos-abs"></a>
+                    <a class="titlebar-tip-btn-close pos-abs hand"></a>
                 </div>
             </div>
         </div>
@@ -159,7 +162,7 @@
                                             <p class="col-l pur">
                                                 <span class="col-l">1 *</span><a class="hand pur ndr feeds-btn-like active txtindent ml-5 col-l">like</a>
                                             </p>
-                                            <a class="hand pur ndr feeds-btn-addcomments col-l ml-10">添加评论</a>
+                                            <a class="hand pur feeds-btn-addcomments col-l ml-10">添加评论</a>
                                         </div>
                                         <p class="bla feedslist-content-text">红十字、达芬奇、动车……难道这些是中国2012年前的狂燥？曾经听说过有个理论，外星人其实就是通过输入基因达到控制一些国家执政领导者，故意破坏国家政权，激起民族矛盾和安定团结</p>
                                         <a class="feedslist-content-img hand mt-13 col-l">
@@ -202,7 +205,7 @@
                                         </a>
                                         <div class="pos-abs feeds-btnbox">
                                             <a class="hand pur ndr feeds-btn-like txtindent col-l">like</a>
-                                            <a class="hand pur ndr feeds-btn-addcomments col-l ml-10">添加评论</a>
+                                            <a class="hand pur feeds-btn-addcomments col-l ml-10">添加评论</a>
                                         </div>
                                         <p class="bla feedslist-content-text">红十字、达芬奇、动车……难道这些是中国2012年前的狂燥？曾经听说过有个理论，外星人其实就是通过输入基因达到控制一些国家执政领导者，故意破坏国家政权，激起民族矛盾和安定团结</p>
                                         <a class="feedslist-content-img hand mt-13 col-l">
@@ -432,7 +435,10 @@
 
     <!-- JavaScript -->
     <script type="text/javascript" src="_scripts/lib/jquery-1.6.2.js"></script>
-    <script type="text/javascript" src="_scripts/ui/topbar.js"></script>
+    <!-- Module -->
+    <script type="text/javascript" src="_scripts/module/topbar.js"></script>
+    <!-- Page -->
+    <script type="text/javascript" src="_scripts/page/mypage.js"></script>
 
 </body>
 </html>

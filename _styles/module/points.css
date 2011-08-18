@@ -10,6 +10,10 @@
     display: block;
     border: 1px solid #999;
 }
+.pointsbox-headshot:hover
+{
+    text-decoration: none;
+}
 .pointsbox-headshot img
 {
     width: 48px;

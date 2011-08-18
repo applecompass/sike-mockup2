@@ -17,6 +17,7 @@
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/base.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/common.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/frame.css" />
+    <!-- Module -->
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/form.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/button.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/feeds.css" />
@@ -24,6 +25,7 @@
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/points.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/planlist.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/fans.css" />
+    <!-- Page -->
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/page/profile.css" />
 
 </head>
@@ -50,7 +52,7 @@
             </div>
             <ul id="topbar-menu" class="pos-abs hor whi">
                 <li>
-                    <a href="#topbar-regist" class="hand">用户注册</a>
+                    <a href="apply.htm" class="hand">用户注册</a>
                 </li>
                 <li>
                     <a href="#topbar-login" class="hand">登录</a>
@@ -74,7 +76,7 @@
 	    <div id="content" class="pw align-c">
 		    <div id="container" class="cf">
                 <div class="col-l col-w">
-                    <div id="profilebox" class="cf mt-10">
+                    <div id="profilebox" class="cf mt-10 pos-rel">
                         <a class="profilebox-headshot col-l hand pos-rel">
                             <img src="_imgs/photos/3xl.jpg" />
                         </a>
@@ -92,21 +94,21 @@
                             <p class="gra italic txt-m mt-5">
                                 I am on my way to the future, where you are.
                             </p>
-                            <ul class="profilebox-interact col-r hor mt-15">
-                                <li>
-                                    <a href="#this" class="mgry hand">发私信</a>
-                                </li>
-                                <li>
-                                    <a href="#this" class="mgry hand">@他</a>
-                                </li>
-                                <li>
-                                    <a href="#this" class="mgry hand">更多</a>
-                                </li>
-                            </ul>
                             <a class="btn-follow hand whi mt-10">
                                 关注
                             </a>
                         </div>
+                        <ul class="profilebox-interact hor pos-abs">
+                            <li class="first">
+                                <a href="#this" class="gra hand">发私信</a>
+                            </li>
+                            <li>
+                                <a href="#this" class="gra hand">@他</a>
+                            </li>
+                            <li class="last">
+                                <a href="#this" class="gra hand">更多</a>
+                            </li>
+                        </ul>
                     </div>
                     <div id="planchart" class="mt-20 pos-rel">
                         <div class="cf">
@@ -129,22 +131,16 @@
                                         <span class="mgry txt-xl">旅行</span>
                                     </a>
                                 </li>
-                                <li class="planlist-travel">
+                                <li class="planlist-sports">
                                     <a class="hand txtalign-c">
-                                        <img src="_imgs/icons/travel.png" />
-                                        <span class="mgry txt-xl">旅行</span>
+                                        <img src="_imgs/icons/sports.png" />
+                                        <span class="mgry txt-xl">运动</span>
                                     </a>
                                 </li>
-                                <li class="planlist-plan">
+                                <li class="planlist-study">
                                     <a class="hand txtalign-c">
-                                        <img src="_imgs/icons/icon_plan.png" />
-                                        <span class="mgry txt-xl">我的计划</span>
-                                    </a>
-                                </li>
-                                <li class="planlist-customize">
-                                    <a class="hand txtalign-c">
-                                        <img src="_imgs/icons/customize.png" />
-                                        <span class="mgry txt-xl">输入自定义</span>
+                                        <img src="_imgs/icons/study.png" />
+                                        <span class="mgry txt-xl">学习</span>
                                     </a>
                                 </li>
                             </ul>
@@ -196,7 +192,7 @@
                                             <p class="col-l pur">
                                                 <span class="col-l">1 *</span><a class="hand pur ndr feeds-btn-like active txtindent ml-5 col-l">like</a>
                                             </p>
-                                            <a class="hand pur ndr feeds-btn-addcomments col-l ml-10">添加评论</a>
+                                            <a class="hand pur feeds-btn-addcomments col-l ml-10">添加评论</a>
                                         </div>
                                         <p class="bla feedslist-content-text">红十字、达芬奇、动车……难道这些是中国2012年前的狂燥？曾经听说过有个理论，外星人其实就是通过输入基因达到控制一些国家执政领导者，故意破坏国家政权，激起民族矛盾和安定团结</p>
                                         <a class="feedslist-content-img hand mt-13 col-l">
@@ -239,7 +235,7 @@
                                         </a>
                                         <div class="pos-abs feeds-btnbox">
                                             <a class="hand pur ndr feeds-btn-like txtindent col-l">like</a>
-                                            <a class="hand pur ndr feeds-btn-addcomments col-l ml-10">添加评论</a>
+                                            <a class="hand pur feeds-btn-addcomments col-l ml-10">添加评论</a>
                                         </div>
                                         <p class="bla feedslist-content-text">红十字、达芬奇、动车……难道这些是中国2012年前的狂燥？曾经听说过有个理论，外星人其实就是通过输入基因达到控制一些国家执政领导者，故意破坏国家政权，激起民族矛盾和安定团结</p>
                                         <a class="feedslist-content-img hand mt-13 col-l">
@@ -404,7 +400,10 @@
 
     <!-- JavaScript -->
     <script type="text/javascript" src="_scripts/lib/jquery-1.6.2.js"></script>
-    <script type="text/javascript" src="_scripts/ui/topbar.js"></script>
+    <!-- Module -->
+    <script type="text/javascript" src="_scripts/module/topbar.js"></script>
+    <!-- Page -->
+    <script type="text/javascript" src="_scripts/page/profile.js"></script>
 
 </body>
 </html>
