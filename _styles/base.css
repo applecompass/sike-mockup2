@@ -87,7 +87,7 @@ a.ndr:hover     {   text-decoration: none;  }
 .ltspacing      {   letter-spacing: -1px;   }
 .txtindent      {   text-indent: -5000px; overflow: hidden;     }
 .block          {   display: block;    }
-.inlineblock    {   display: inline-block; _display: inline; _zoom: 1;      }
+.inlineblock    {   display: inline-block; *display: inline; *zoom: 1;      }
 .zerolineheight {   line-height: 0;    }
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
