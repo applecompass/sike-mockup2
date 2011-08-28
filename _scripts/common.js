@@ -237,9 +237,9 @@ ZM.Base = {
 /* Base - End */
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
-/* Dom - Begin */
+/* Form - Begin */
 
-ZM.Dom = {
+ZM.Form = {
 
     /* Input Text Hint */
     textHint: function(elObj, elHint, isLabelHint) {
@@ -291,4 +291,4 @@ ZM.Dom = {
 
 };
 
-/* Dom - End */
+/* Form - End */
