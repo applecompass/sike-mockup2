@@ -1,0 +1,31 @@
+/*========================================================
+    File:        dotnav.css
+    Description: CSS Styles for Dot Nav
+========================================================*/
+
+/* - Dot Nav */
+.dotnav-container
+{
+    line-height: 0;
+    margin-top: 15px;
+}
+.dotnav
+{
+    display: inline-block;
+    *display: inline;
+}
+.dotnav li
+{
+    margin-left: 4px;
+    width: 8px;
+    height: 8px;
+    overflow: hidden;
+    text-indent: -100px;
+    display: block;
+    cursor: pointer;
+    background: url(../../_imgs/high/icon_dotnav.png) left top no-repeat;
+}
+.dotnav li.active
+{
+    background-image: url(../../_imgs/high/icon_dotnav_active.png);
+}

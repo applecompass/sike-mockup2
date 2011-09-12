@@ -16,6 +16,11 @@
 // Document Ready.
 jQuery(function ($) {
 
+    var objPlanList = new ZM.PlanList({ $container: $("div.planlist-container"), visibleNum: 6 });
+    objPlanList
+        .render(testPlanListData)
+        .select(function (i) { console.log("select " + i); }, 0)
+        .nav(function (i) { console.log("move to " + i + " paragraph"); });
 
 });
 

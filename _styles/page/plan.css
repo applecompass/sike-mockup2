@@ -69,11 +69,11 @@
 }
 
 /* + Plan List */
-#planlist
+.planlist-container
 {
     margin: 25px 0 0 25px;
 }
-#planlist li
+.planlist li
 {
     margin: 0 0 0 78px;
 }
@@ -108,6 +108,22 @@
 .ph-hdrd
 {
     background-color: #f37916;
+}
+#planhour li a:hover
+{
+    text-decoration: none;
+}
+.ph-one:hover
+{
+    box-shadow: 0 0 10px #fdc51a;
+}
+.ph-ten:hover
+{
+    box-shadow: 0 0 10px #f3a216;
+}
+.ph-hdrd:hover
+{
+    box-shadow: 0 0 10px #f37916;
 }
 .ph-unit
 {

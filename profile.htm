@@ -23,6 +23,7 @@
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/feeds.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/activity.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/points.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/dotnav.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/planlist.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/fans.css" />
     <!-- Page -->
@@ -95,11 +96,11 @@
                             <p class="gra italic txt-m mt-5">
                                 I am on my way to the future, where you are.
                             </p>
-                            <a class="btn-follow hand whi mt-10">
+                            <a class="btn-follow hand whi mt-10 hidden-im">
                                 关注
                             </a>
                         </div>
-                        <ul class="profilebox-interact hor pos-abs">
+                        <ul class="profilebox-interact hor pos-abs hidden">
                             <li class="first">
                                 <a href="#this" class="gra hand">发私信</a>
                             </li>
@@ -112,48 +113,8 @@
                         </ul>
                     </div>
                     <div id="planchart" class="mt-20 pos-rel">
-                        <div class="cf">
-                            <ul id="planlist" class="hor col-l ml-15">
-                                <li class="planlist-run active first">
-                                    <a class="hand txtalign-c">
-                                        <img src="_imgs/icons/run.png" />
-                                        <span class="mgry txt-xl">跑步</span>
-                                    </a>
-                                </li>
-                                <li class="planlist-loseweight">
-                                    <a class="hand txtalign-c">
-                                        <img src="_imgs/icons/loseweight.png" />
-                                        <span class="mgry txt-xl">减肥</span>
-                                    </a>
-                                </li>
-                                <li class="planlist-travel">
-                                    <a class="hand txtalign-c">
-                                        <img src="_imgs/icons/travel.png" />
-                                        <span class="mgry txt-xl">旅行</span>
-                                    </a>
-                                </li>
-                                <li class="planlist-sports">
-                                    <a class="hand txtalign-c">
-                                        <img src="_imgs/icons/sports.png" />
-                                        <span class="mgry txt-xl">运动</span>
-                                    </a>
-                                </li>
-                                <li class="planlist-study">
-                                    <a class="hand txtalign-c">
-                                        <img src="_imgs/icons/study.png" />
-                                        <span class="mgry txt-xl">学习</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="dotnav-container txtalign-c mt-10">
-                            <ul class="dotnav hor">
-                                <li class="active">
-                                    <a></a>
-                                </li>
-                                <li>
-                                    <a></a>
-                                </li>
+                        <div class="planlist-container mt-15">
+                            <ul class="planlist hor">
                             </ul>
                         </div>
                         <div id="chartbox" class="cf pos-rel mt-10">
@@ -169,7 +130,7 @@
                             <a class="hand shrink bla inlineblock" id="planchart-btn-more">点击此处关闭更多</a>
                         </p>
                     </div>
-                    <div id="feedsbox" class="mt-10">
+                    <div id="feedsbox" class="mt-40">
                         <h2 class="txt-xxl bold pure">
                             <span class="feedsbox-title">最新动态</span>
                         </h2>
@@ -400,13 +361,14 @@
 	</div>
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="_scripts/lib/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="_scripts/_lib/jquery-1.6.2.js"></script>
     <script type="text/javascript" src="_scripts/base.js"></script>
     <script type="text/javascript" src="_scripts/common.js"></script>
-    <script type="text/javascript" src="_scripts/config.js"></script>
+    <script type="text/javascript" src="_scripts/config.js" charset="gb2312"></script>
     <!-- Module -->
-    <script type="text/javascript" src="_scripts/module/topbar.js"></script>
-    <script type="text/javascript" src="_scripts/module/guide.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/topbar.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/guide.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/planlist.js"></script>
     <!-- Page -->
     <script type="text/javascript" src="_scripts/page/profile.js"></script>
 

@@ -19,7 +19,8 @@
 {
     letter-spacing: 1px;
 }
-.btn-join
+.btn-join,
+.btn-join-disable
 {
     border: 2px solid #f7af80;
     padding: 0 20px 0 30px;
@@ -41,12 +42,19 @@
     /* Opera 11.10+ */
     background: -o-linear-gradient(#fac7a6, #f1782a);
 }
-.btn-join span
+.btn-join span,
+.btn-join-disable span
 {
     display: block;
     color: #fff;
     line-height: 2em;
     padding-right: 45px;
     background: url(../../_imgs/high/icon_join.png) right center no-repeat;
+}
+.btn-join-disable
+{
+    opacity: .7;
+    filter: alpha(opacity=70);
+    cursor: not-allowed;
 }
 /* + Activate CSS - End */

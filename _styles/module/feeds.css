@@ -87,6 +87,10 @@
     background-image: url(../../_imgs/high/icon_heart_red.png);
 }
 /* - Comments */
+.feedslist-comment
+{
+    display: none;
+}
 .feedslist-comment-container
 {
     width: 92.8%;

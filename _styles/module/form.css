@@ -22,6 +22,11 @@
     min-width: 210px;
     padding: 0 3px;
 }
+.fb-input[readonly]
+{
+    background-color: #f3f3f3;
+    color: #666;
+}
 .fb-textarea
 {
     border: 1px solid #c3c3c3;
@@ -40,17 +45,10 @@
 }
 .fb-tip
 {
-    line-height: 1.7em;
-    height: 1.7em;
-    margin: 1px 0 0 15px;
-    padding: 0 10px;
-    background-color: #16c4f3;
+    width: 108px;
+    padding: 3px 8px;
+    background-color: #fcc;
 }
 .icon-formerr
 {
-    width: 6px;
-    height: 7px;
-    left: -6px;
-    top: 6px;
-    background: url(../_imgs/high/icon_formerr.png) left top no-repeat;
 }

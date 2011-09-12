@@ -82,8 +82,8 @@
                                     <label for="fb-mail">电子邮件：</label>
                                 </p>
                                 <p class="mt-5 pos-rel">
-                                    <input type="text" id="fb-mail" class="fb-input outerglow" autofocus />
-                                    <span class="pos-abs fb-tip whi hidden">
+                                    <input type="text" id="fb-mail" class="fb-input outerglow" />
+                                    <span class="pos-rel fb-tip whi hidden col-r">
                                         <sup class="pos-abs icon-formerr"></sup>
                                         <span class="fb-tip-msg"></span>
                                     </span>
@@ -95,8 +95,8 @@
                                     <label for="fb-nickname">起个拉风的用户名：</label>
                                 </p>
                                 <p class="mt-5 pos-rel">
-                                    <input type="text" id="fb-username" class="fb-input outerglow" />
-                                    <span class="pos-abs fb-tip whi hidden">
+                                    <input type="text" id="fb-username" class="fb-input outerglow" autofocus />
+                                    <span class="pos-rel fb-tip whi hidden col-r">
                                         <sup class="pos-abs icon-formerr"></sup>
                                         <span class="fb-tip-msg"></span>
                                     </span>
@@ -109,7 +109,7 @@
                                 </p>
                                 <p class="mt-5 pos-rel">
                                     <input type="password" id="fb-password" class="fb-input outerglow" />
-                                    <span class="pos-abs fb-tip whi hidden">
+                                    <span class="pos-rel fb-tip whi hidden col-r">
                                         <sup class="pos-abs icon-formerr"></sup>
                                         <span class="fb-tip-msg"></span>
                                     </span>
@@ -117,26 +117,20 @@
                                 <p class="gra mt-5"">6-16个字符</p>
                             </div>
                             <p class="mt-15">
-                                <input type="checkbox" id="fb-chk-protocal" class="fb-chkbox hidden" />
-                                <label for="fb-chk-protocal">提交完该表单，就意味着您同意了《<a href="plan.htm" class="ora">使用协议</a>》</label>
+                                <input type="checkbox" id="fb-chk-protocal" class="fb-chkbox" />
+                                <label for="fb-chk-protocal">提交完该表单，就意味着您同意了《<a href="#this" class="ora">使用协议</a>》</label>
                             </p>
                         </div>
                         <div class="col-r col-w txtalign-c">
                             <div class="form-createuser-action mt-25">
                                 <p class="txt-9xl gry italic"><sub class="txt-3xl">"</sub>死磕是一种精神，它与时间有关<sup class="txt-3xl">"</sup></p>
                                 <p class="mt-50">
-                                    <a id="fb-createuser" href="plan.htm" class="btn-join ndr txt-7xl outerglow">
+                                    <a id="fb-createuser" href="#this" class="ndr txt-7xl outerglow btn-join-disable">
                                         <span>欢迎加入啄米</span>
                                     </a>
                                     <span class="hidden">
                                         <input type="submit" id="fb-createuser" class="btn-join outerglow" value="欢迎加入啄米" />
                                     </span>
-                                </p>
-                                <p class="txt-8xl gry mt-10">或</p>
-                                <p class="mt-15">
-                                    <a class="flexwidth btn-weibo">
-                                        <span class="fw-l">使用微博账号登录</span>
-                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -156,13 +150,13 @@
 	</div>
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="_scripts/lib/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="_scripts/_lib/jquery-1.6.2.js"></script>
     <script type="text/javascript" src="_scripts/base.js"></script>
     <script type="text/javascript" src="_scripts/common.js"></script>
-    <script type="text/javascript" src="_scripts/config.js"></script>
+    <script type="text/javascript" src="_scripts/config.js" charset="gb2312"></script>
     <!-- Module -->
-    <script type="text/javascript" src="_scripts/module/topbar.js"></script>
-    <script type="text/javascript" src="_scripts/module/guide.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/topbar.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/guide.js"></script>
     <!-- Page -->
     <script type="text/javascript" src="_scripts/page/activate.js"></script>
 

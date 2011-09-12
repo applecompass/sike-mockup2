@@ -25,6 +25,7 @@
 }
 .pointsbox-num
 {
+    display: none;
     width: 24px;
     height: 25px;
     top: -12px;
@@ -52,6 +53,7 @@
 }
 .pointsbox-bar
 {
+    display: none;
     width: 122px;
     height: 20px;
     line-height: 20px;
@@ -94,4 +96,20 @@
 {
     padding-right: 16px;
     background: url(../../_imgs/high/icon_star.png) right center no-repeat;
+}
+
+#signature
+{
+    width: 96%;
+    color: #999;
+    line-height: 1.2em;
+    height: 2.5em;
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    resize: none;
+}
+#signature.active
+{
+    border: 1px inset #ddd;
 }

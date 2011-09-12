@@ -20,6 +20,7 @@
     <!-- Module -->
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/form.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/points.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/dotnav.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/planlist.css" />
     <!-- Page -->
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/page/plan.css" />
@@ -104,51 +105,17 @@
                     
                     </div>
                 </div>
-                <div id="planlistbox-moreplans" class="hidden">
-                    <div id="planlistbox" class="container-sep-t mt-15">
+                <div id="planlistbox-moreplans" class="mt-30">
+                    <div id="planlistbox" class="container-sep-t">
                         <p class="gra txt-xl txtalign-c mt-5">看看目前最多的人想做的计划是什么：</p>
-                        <ul id="planlist" class="hor">
-                            <li class="planlist-run active first">
-                                <a class="hand txtalign-c">
-                                    <img src="_imgs/icons/run.png" />
-                                    <span class="mgry txt-xl">跑步</span>
-                                </a>
-                            </li>
-                            <li class="planlist-loseweight">
-                                <a class="hand txtalign-c">
-                                    <img src="_imgs/icons/loseweight.png" />
-                                    <span class="mgry txt-xl">减肥</span>
-                                </a>
-                            </li>
-                            <li class="planlist-travel">
-                                <a class="hand txtalign-c">
-                                    <img src="_imgs/icons/travel.png" />
-                                    <span class="mgry txt-xl">旅行</span>
-                                </a>
-                            </li>
-                            <li class="planlist-study">
-                                <a class="hand txtalign-c">
-                                    <img src="_imgs/icons/study.png" />
-                                    <span class="mgry txt-xl">学习</span>
-                                </a>
-                            </li>
-                            <li class="planlist-sports">
-                                <a class="hand txtalign-c">
-                                    <img src="_imgs/icons/sports.png" />
-                                    <span class="mgry txt-xl">运动</span>
-                                </a>
-                            </li>
-                            <li class="planlist-customize">
-                                <a class="hand txtalign-c">
-                                    <img src="_imgs/icons/customize.png" />
-                                    <span class="mgry txt-xl">输入自定义</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="planlist-container">
+                            <ul class="planlist hor">
+                            </ul>
+                        </div>
                     </div>
-                    <p class="remind italic mt-15 ora">选择要执行的计划后，请在下列选择计划时间长度：</p>
+                    <p class="italic mt-15 ora">选择要执行的计划后，请在下列选择计划时间长度：</p>
                 </div>
-                <p class="planlistbox-btn-more-container pos-abs txtalign-c">
+                <p class="planlistbox-btn-more-container pos-abs txtalign-c hidden">
                     <a id="planlistbox-btn-more" class="hand shrink bla inlineblock">收起其它活动</a>
                 </p>
 		    </div>
@@ -187,13 +154,14 @@
 	</div>
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="_scripts/lib/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="_scripts/_lib/jquery-1.6.2.js"></script>
     <script type="text/javascript" src="_scripts/base.js"></script>
     <script type="text/javascript" src="_scripts/common.js"></script>
-    <script type="text/javascript" src="_scripts/config.js"></script>
+    <script type="text/javascript" src="_scripts/config.js" charset="gb2312" ></script>
     <!-- Module -->
-    <script type="text/javascript" src="_scripts/module/topbar.js"></script>
-    <script type="text/javascript" src="_scripts/module/guide.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/topbar.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/guide.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/planlist.js"></script>
     <!-- Page -->
     <script type="text/javascript" src="_scripts/page/plan.js"></script>
 

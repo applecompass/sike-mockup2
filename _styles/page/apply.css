@@ -65,6 +65,11 @@ html
     -webkit-box-shadow: 3px 3px 3px #d3d3d3 inset;
     box-shadow: 3px 3px 3px #d3d3d3 inset;
 }
+div.applyformbox-err
+{
+    background-color: #fee;
+    border-color: #fcc;
+}
 #applyform-email-hint,
 #applyform-email
 {
@@ -87,7 +92,7 @@ html
 .applyform-button
 {
     margin: 2px;
-    padding: 0 10px 0 0;
+    cursor: pointer;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
@@ -107,7 +112,7 @@ html
     height: 32px;
     line-height: 32px;
     border-width: 0;
-    padding: 0 15px 0 10px;
+    padding: 0 25px 0 10px;
     background: url(../../_imgs/high/icon_arrow_whi_r.png) right center no-repeat;
 }
 

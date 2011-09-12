@@ -111,6 +111,7 @@ a.pur:hover         {   color: #61468b;    }
 /* - Activity Statistic */
 #activitystatisticbox
 {
+    display: none;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -120,33 +121,6 @@ a.pur:hover         {   color: #61468b;    }
 #activitystatisticbox li
 {
     padding: 0 19px;
-}
-
-/* - Dot Nav */
-.dotnav-container
-{
-    line-height: 0;
-}
-.dotnav
-{
-    display: inline-block;
-    *display: inline;
-}
-.dotnav li
-{
-    margin-left: 4px;
-}
-.dotnav li a
-{
-    width: 8px;
-    height: 8px;
-    display: block;
-    cursor: pointer;
-    background: url(../_imgs/high/icon_dotnav.png) left top no-repeat;
-}
-.dotnav li.active a
-{
-    background-image: url(../_imgs/high/icon_dotnav_active.png);
 }
 
 /* + Common CSS - End */

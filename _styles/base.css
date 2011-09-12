@@ -82,13 +82,15 @@ a.flexwidth:hover       {   text-decoration: none;                              
 a.ndr,
 a.ndr:hover     {   text-decoration: none;  }
 .hidden         {   display: none;          }
+.block          {   display: block;         }
+.hidden-im      {   display: none!important;          }
+.block-im       {   display: block!important;         }
 .hand           {   cursor: pointer;        }
 .nohand         {   cursor: default;        }
 .ltspacing      {   letter-spacing: -1px;   }
 .txtindent      {   text-indent: -5000px; overflow: hidden;     }
-.block          {   display: block;    }
 .inlineblock    {   display: inline-block; *display: inline; *zoom: 1;      }
-.zerolineheight {   line-height: 0;    }
+.zerolineheight {   line-height: 0;         }
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 /* - Font Size */

@@ -23,6 +23,7 @@
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/points.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/feeds.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/activity.css" />
+	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/dotnav.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/planlist.css" />
 	<link rel="Stylesheet" type="text/css" media="all" href="./_styles/module/hotplan.css" />
     <!-- Page -->
@@ -84,44 +85,27 @@
                 <div class="col-l col-w">
                     <div class="cf mt-10">
                         <p class="italic ora col-l txt-4xl mt-30">我要更新：</p>
-                        <ul id="planlist" class="hor col-l ml-40">
-                            <li class="planlist-run active first">
-                                <a class="hand txtalign-c">
-                                    <img src="_imgs/icons/run.png" />
-                                    <span class="mgry txt-xl">跑步</span>
-                                </a>
-                            </li>
-                            <li class="planlist-loseweight">
-                                <a class="hand txtalign-c">
-                                    <img src="_imgs/icons/loseweight.png" />
-                                    <span class="mgry txt-xl">减肥</span>
-                                </a>
-                            </li>
-                            <li class="planlist-plan">
-                                <a class="hand txtalign-c">
-                                    <img src="_imgs/icons/icon_plan.png" />
-                                    <span class="mgry txt-xl">我的计划</span>
-                                </a>
-                            </li>
-                            <li class="planlist-customize">
-                                <a class="hand txtalign-c">
-                                    <img src="_imgs/icons/customize.png" />
-                                    <span class="mgry txt-xl">输入自定义</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <div id="myplanlist" class="col-l ml-40">
+                            <div class="planlist-container">
+                                <ul class="planlist hor">
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div id="publishbox" class="cf pos-rel mt-35">
                         <div class="col-l col-n">
-                            <p class="txt-4xl italic mt-5">这次我烧了<span id="" class="ora txt-8xl ml-10">10</span><span class="txt-5xl ml-10">分钟</span></p>
-                            <div class="publishbox-dragbar pos-rel mt-25">
-                                <div class="publishbox-progress"></div>
-                                <a class="publishbox-handle pos-abs hand"></a>
+                            <p class="txt-4xl italic mt-5">
+                                这次我烧了
+                                <span id="publishbox-time" class="ora txt-8xl ml-10">10</span>
+                                <span class="txt-5xl ml-10">分钟</span>
+                            </p>
+                            <div id="publishbox-dragbar" class="pos-rel mt-25">
                             </div>
                         </div>
                         <div class="col-r col-w">
-                            <textarea id="publishbox-input" class="fb-textarea gra" rows="5">分享下你在梦想路上的感受，让更多的人来关注你</textarea>
-                            <ul id="publishbox-add" class="hor mt-8">
+                            <textarea id="publishbox-input" class="fb-textarea gra hidden" rows="5"></textarea>
+                            <textarea id="publishbox-input-hint" class="fb-textarea gra" rows="5">分享下你在梦想路上的感受，让更多的人来关注你</textarea>
+                            <ul id="publishbox-add" class="hor mt-8 hidden">
                                 <li class="publishbox-add-emote first">
                                     <a class="hand">表情</a>
                                 </li>
@@ -132,7 +116,7 @@
                                     <a class="hand">音乐</a>
                                 </li>
                             </ul>
-                            <div class="txtalign-r">
+                            <div class="txtalign-r mt-10">
                                 <a id="publishbox-btn-publish" class="hand gra txt-3xl inlineblock">发布</a>
                             </div>
                         </div>
@@ -270,7 +254,7 @@
                         </div>
                     </div>
                     <p class="gra italic txt-m mt-15">
-                        I am on my way to the future, where you are.
+                        <textarea id="signature" rows="2">I am on my way to the future, where you are.</textarea>
                     </p>
                     <div id="weather" class="mt-15">
                         <span class="gra position">上海市</span>
@@ -435,13 +419,19 @@
 	</div>
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="_scripts/lib/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="_scripts/_lib/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="_scripts/_lib/jquery.ui/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="_scripts/_lib/jquery.ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="_scripts/_lib/jquery.ui/jquery.ui.mouse.js"></script>
+    <script type="text/javascript" src="_scripts/_lib/jquery.ui/jquery.ui.slider.js"></script>
     <script type="text/javascript" src="_scripts/base.js"></script>
     <script type="text/javascript" src="_scripts/common.js"></script>
-    <script type="text/javascript" src="_scripts/config.js"></script>
+    <script type="text/javascript" src="_scripts/config.js" charset="gb2312"></script>
     <!-- Module -->
-    <script type="text/javascript" src="_scripts/module/topbar.js"></script>
-    <script type="text/javascript" src="_scripts/module/guide.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/topbar.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/guide.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/planlist.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/points.js"></script>
     <!-- Page -->
     <script type="text/javascript" src="_scripts/page/mypage.js"></script>
 
