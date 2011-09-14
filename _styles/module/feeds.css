@@ -55,6 +55,7 @@
 }
 .feeds-btn-showcomments
 {
+    display: none;
     padding: 1px 5px 1px 6px;
     background-color: #b297db;
     -moz-border-radius: 4px;
@@ -85,6 +86,10 @@
 .feeds-btn-like.active
 {
     background-image: url(../../_imgs/high/icon_heart_red.png);
+}
+.feeds-btn-addcomments
+{
+    display: none;
 }
 /* - Comments */
 .feedslist-comment

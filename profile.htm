@@ -53,7 +53,7 @@
             </div>
             <ul id="topbar-menu" class="pos-abs hor whi">
                 <li>
-                    <a href="apply.htm" class="hand">用户注册</a>
+                    <a href="activate.htm" class="hand">用户注册</a>
                 </li>
                 <li>
                     <a href="#topbar-login" class="hand">登录</a>
@@ -152,7 +152,10 @@
                                         </a>
                                         <div class="pos-abs feeds-btnbox">
                                             <p class="col-l pur">
-                                                <span class="col-l">1 *</span><a class="hand pur ndr feeds-btn-like active txtindent ml-5 col-l">like</a>
+                                                <span class="col-l">
+                                                    <span class="feeds-likecount">1</span> *
+                                                </span>
+                                                <a class="hand pur ndr feeds-btn-like active txtindent ml-5 col-l">like</a>
                                             </p>
                                             <a class="hand pur feeds-btn-addcomments col-l ml-10">添加评论</a>
                                         </div>
@@ -196,7 +199,12 @@
                                             <span>1</span>
                                         </a>
                                         <div class="pos-abs feeds-btnbox">
-                                            <a class="hand pur ndr feeds-btn-like txtindent col-l">like</a>
+                                            <p class="col-l pur">
+                                                <span class="col-l hidden">
+                                                    <span class="feeds-likecount">0</span> *
+                                                </span>
+                                                <a class="hand pur ndr feeds-btn-like txtindent ml-5 col-l">like</a>
+                                            </p>
                                             <a class="hand pur feeds-btn-addcomments col-l ml-10">添加评论</a>
                                         </div>
                                         <p class="bla feedslist-content-text">红十字、达芬奇、动车……难道这些是中国2012年前的狂燥？曾经听说过有个理论，外星人其实就是通过输入基因达到控制一些国家执政领导者，故意破坏国家政权，激起民族矛盾和安定团结</p>
@@ -369,6 +377,7 @@
     <script type="text/javascript" src="_scripts/view/module/topbar.js"></script>
     <script type="text/javascript" src="_scripts/view/module/guide.js"></script>
     <script type="text/javascript" src="_scripts/view/module/planlist.js"></script>
+    <script type="text/javascript" src="_scripts/view/module/feeds.js"></script>
     <!-- Page -->
     <script type="text/javascript" src="_scripts/page/profile.js"></script>
 

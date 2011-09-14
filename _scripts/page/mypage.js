@@ -16,28 +16,53 @@
 // Document Ready.
 jQuery(function ($) {
 
-    var objPlanList = new ZM.PlanList({ $container: $("div.planlist-container"), visibleNum: 6 });
-    objPlanList
+    !function () {
+        var $prong = $("div#publishbox > span.publishbox-prong");
+        var defaultLeft = parseInt($prong.position().left);
+        var planSelectCallback = function (order, plan_id) {
+
+            var $planlistUl = $("div.planlist-container").find("ul.planlist");
+            var $planlistLi = $planlistUl.find(" > li");
+            var $planlistLiDelegate = $planlistLi.eq(1);
+            var liWidth = $planlistLiDelegate.width();
+            var liMarginLeft = parseInt($planlistLiDelegate.css("margin-left"));
+            var liSpan = liWidth + liMarginLeft;
+
+            $prong.animate(
+                    {
+                        left: defaultLeft + liSpan * (order % 5)
+                    },
+                    400,
+                    function () {
+                        // Animation complete.
+                    });
+        };
+
+        var objPlanList = new ZM.PlanList({ $container: $("div.planlist-container"), visibleNum: 5 });
+        objPlanList
         .render(testPlanListData)
-        .select(function (i) { console.log("select " + i); }, 0)
+        .select(planSelectCallback, 0)
         .nav(function (i) { console.log("move to " + i + " paragraph"); });
+    } ();
 
     ZM.Form.textHint($("#publishbox-input"), $("#publishbox-input-hint"));
 
-    var burnSlider = function (defaultVal, maxVal) {
-        var $elValue = $("#publishbox-time");
-        $elValue.text(defaultVal);
-        $("#publishbox-dragbar").slider({
-            range: "min",
-            value: defaultVal,
-            min: 0,
-            max: maxVal,
-            slide: function (event, ui) {
-                $elValue.text(ui.value);
-            }
-        });
-    };
-    burnSlider(50, 180);
+    !function () {
+        var burnSlider = function (defaultVal, maxVal) {
+            var $elValue = $("#publishbox-time");
+            $elValue.text(defaultVal);
+            $("#publishbox-dragbar").slider({
+                range: "min",
+                value: defaultVal,
+                min: 0,
+                max: maxVal,
+                slide: function (event, ui) {
+                    $elValue.text(ui.value);
+                }
+            });
+        };
+        burnSlider(50, 180);
+    } ();
 
 });
 

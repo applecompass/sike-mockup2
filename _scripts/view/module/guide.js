@@ -21,8 +21,8 @@
                 "activate",
                 "plan",
                 "mypage",
-                "account",
-                "profile"
+                "profile",
+                "account"
             ];
             var $guideButton = $("<ul id=\"slidenav\">" +
                                     "<li class=\"slidenav-prev\">" +
