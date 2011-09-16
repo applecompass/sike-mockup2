@@ -1,5 +1,6 @@
 ﻿var Structure = {
     // RENDER
+    // 直接render到页面
     Context:
         {
             UserId: "",
@@ -7,6 +8,8 @@
         },
     /* ---------------------------------------------------- */
     // GET
+    // 客户端发给服务端
+     // 返回true/false(错误类型)
     Login:
         {
             UserName: "",
@@ -15,6 +18,8 @@
         },
     /* ---------------------------------------------------- */
     // GET
+    // 客户端发给服务端
+     // 返回true/false(错误类型)
     Register:
         {
             Email: "",
@@ -24,6 +29,7 @@
         },
     /* ---------------------------------------------------- */
     // GET: UserId
+    // 从服务端获取，参数：UserId
     ExpressProfile:
         {
             UserId: "",
@@ -34,6 +40,7 @@
             Signature: ""
         },
     // GET
+    // 从服务端获取，无参数
     AllPlans:
         [{
             PlanId: "",
@@ -43,6 +50,8 @@
             Member: ""
         }],
     // POST
+    // 客户端发给服务端
+     // 返回true/false(错误类型)
     CreatePlan:
         {
             UserId: "",
@@ -52,6 +61,7 @@
         },
     /* ---------------------------------------------------- */
     // GET: UserId
+    // 从服务端获取，参数：UserId
     MyPlan:
         [{
             PlanId: "",
@@ -62,6 +72,9 @@
             CreateDate: ""
         }],
     // POST
+    // 烧计划小时
+     // 客户端发给服务端
+     // 返回true/false(错误类型)
     UpdatePlan:
         {
             UserId: "",
@@ -70,6 +83,7 @@
             Message: ""
         },
     // GET: UserId
+    // 从服务端获取，参数：UserId
     Feeds:
         [{
             User: {
@@ -91,12 +105,18 @@
             Like: 0
         }],
     // GET: UserId
+    // 从服务端获取，参数：UserId，返回该结构
+    // 更新签名，客户端发给服务端
+     // 返回true/false(错误类型)
     Signature:
         {
             UserId: "",
             signature: ""
         },
     // GET
+    // 最热/火的计划
+    // 客户端发给服务端
+     // 返回true/false(错误类型)
     HotPlans:
         [{
             PlanId: "",
@@ -106,6 +126,7 @@
         }],
     /* ---------------------------------------------------- */
     // GET: UserId
+    // 从服务端获取，参数：UserId
     UserPlan:
         [{
             PlanId: "",
@@ -122,14 +143,17 @@
                 }]
         }],
     // GET: PlanId,PlanHour,FinishTime,PassTime
+    // 从服务端获取，参数：PlanId,PlanHour,FinishTime,PassTime
     PlanRank: {
         rank: ""
     },
     // GET: PlanId
+    // 从服务端获取，参数：PlanId
     PlanConsult: [{
         consult: ""
     }],
     // GET: UserId
+    // 从服务端获取，参数：UserId
     Fans:
         [{
             UserId: "",
