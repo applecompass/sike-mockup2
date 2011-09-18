@@ -13,7 +13,7 @@
         var $container = $("#titlebar-tip");
         var $close = $container.find("a.titlebar-tip-btn-close");
         $close.bind("click", function () {
-            $container.hide();
+            $container.hide("fast");
         });
     } ();
 

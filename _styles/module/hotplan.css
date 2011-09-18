@@ -40,31 +40,42 @@ ul.hotplan-list li span
 {
     line-height: 22px;
 }
-.hotplan-list-item
+.hotplan-item-container
 {
-    display: block;
-    padding: 0 10px 0 15px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
-.hotplan-list-item:hover
+.hotplan-item-container:hover
 {
     background-color: #e0e8f6;
     border-top-color: #c5d1e8;
     border-bottom-color: #c5d1e8;
 }
-.hotplan-list-item:hover .col-l
+.hotplan-item
+{
+    display: block;
+    padding: 0 10px 0 15px;
+}
+.hotplan-item:hover .col-l
 {
     text-decoration: underline;
 }
-.hotplan-list-item:hover
+.hotplan-item:hover
 {
     text-decoration: none;
 }
-.hotplan-join
+.hotplan-item-join
 {
+    right: 10px;
     padding-right: 20px;
     background: url(../../_imgs/high/icon_add.png) right center no-repeat;
 }
-
+ul.hotplan-list li:hover .hotplan-item-join
+{
+    display: block;
+}
+ul.hotplan-list li:hover .hotplan-item-des
+{
+    display: none;
+}
 /* + Hot plan CSS - End */
