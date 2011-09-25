@@ -54,6 +54,9 @@
     padding: 15px;
 }
 /* - Chart Box */
+#chartbox
+{
+}
 .chartbox-container
 {
     line-height: 0;

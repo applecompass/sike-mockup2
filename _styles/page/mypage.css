@@ -27,6 +27,8 @@
 #titlebar-tip
 {
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
     padding-left: 15px;
     border: 1px solid #61468b;
     -moz-border-radius: 4px;
@@ -128,8 +130,8 @@
 #publishbox-dragbar .ui-slider-handle
 {
     background: url(../../_imgs/high/icon_drag.png) left top no-repeat;
-    width: 42px;
-    height: 24px;
+    width: 43px;
+    height: 23px;
     position: absolute;
     left: 0;
     margin-left: -21px;

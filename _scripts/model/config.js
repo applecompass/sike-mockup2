@@ -35,6 +35,11 @@ ZM.Config = {
 
     },
 
+    Text: {
+        hour: "–° ±",
+        minute: "∑÷÷”"
+    },
+
     Value: {
         maxUsername: 12
     }
